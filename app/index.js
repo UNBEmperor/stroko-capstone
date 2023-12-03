@@ -2,7 +2,7 @@ import express from 'express';
 import db_connection from './database/db_connection.js';
 import routes from './routes/routes.js';
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 
 // Middleware to parse JSON requests
 app.use(express.json());
@@ -19,6 +19,8 @@ app.use((err, req, res, next) => {
     });
 });
 
+
+
 // If database is connected successfully, then run the server
 db_connection
     .getConnection()
@@ -30,3 +32,13 @@ db_connection
     .catch((err) => {
         console.log(`Failed to connect to the database: ${err.message}`);
     });
+
+
+// app.listen(port, () =>
+//   console.log(`Listening on port ${port}`)
+// );
+
+//     // If database is connected successfully, then run the server
+// db_connection
+// .getConnection()
+
