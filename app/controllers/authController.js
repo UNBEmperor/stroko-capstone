@@ -23,7 +23,7 @@ export const validate = (req, res, next) => {
 export const fetchUserByEmailOrID = async (data, isEmail = true) => {
     let sql = 'SELECT * FROM `users` WHERE `email`=?';
     if (!isEmail)
-        sql = 'SELECT `id` ,`name`, `email` FROM `users` WHERE `id`=?';
+        sql = 'SELECT `id` ,`username`, `email` FROM `users` WHERE `id`=?';
     const [row] = await DB.execute(sql, [data]);
     return row;
 };
@@ -31,7 +31,7 @@ export const fetchUserByEmailOrID = async (data, isEmail = true) => {
 export default {
     register: async (req, res, next) => {
         try {
-            const { name, email, password } = matchedData(req);
+            const { username, email, password } = matchedData(req);
 
             const saltRounds = 10;
             // Hash the password
@@ -39,8 +39,8 @@ export default {
 
             // Store user data in the database
             const [result] = await DB.execute(
-                'INSERT INTO `users` (`name`,`email`,`password`) VALUES (?,?,?)',
-                [name, email, hashPassword]
+                'INSERT INTO `users` (`username`,`email`,`password`) VALUES (?,?,?)',
+                [username, email, hashPassword]
             );
             res.status(201).json({
                 status: 201,
