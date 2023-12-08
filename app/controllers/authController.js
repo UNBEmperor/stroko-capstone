@@ -9,7 +9,14 @@ var jwt = require("jsonwebtoken");
 var bcrypt = require("bcryptjs");
 
 exports.signup = (req, res) => {
-  // Save User to Database
+  
+  const { password } = req.body;
+  if (password.length < 8) {
+    return res.status(400).send({ 
+      message: "Password should be at least 8 characters long.",
+      status: 400
+    });
+  }
   User.create({
     username: req.body.username,
     email: req.body.email,
@@ -25,18 +32,27 @@ exports.signup = (req, res) => {
           }
         }).then(roles => {
           user.setRoles(roles).then(() => {
-            res.send({ message: "User registered successfully!" });
+            res.send({ 
+              message: "User registered successfully!",
+              status: 200
+            });
           });
         });
       } else {
         // user role = 1
         user.setRoles([1]).then(() => {
-          res.send({ message: "User registered successfully!" });
+          res.send({ 
+            message: "User registered successfully!",
+            status: 200
+          });
         });
       }
     })
     .catch(err => {
-      res.status(500).send({ message: err.message });
+      res.status(500).send({ 
+        message: err.message,
+        status: 500
+      });
     });
 };
 
@@ -48,7 +64,10 @@ exports.signin = (req, res) => {
   })
     .then(user => {
       if (!user) {
-        return res.status(404).send({ message: "User Not found." });
+        return res.status(404).send({ 
+          message: "User Not found.", 
+          status: 404 
+        });
       }
 
       var passwordIsValid = bcrypt.compareSync(
@@ -57,9 +76,10 @@ exports.signin = (req, res) => {
       );
 
       if (!passwordIsValid) {
-        return res.status(401).send({
+        return res.status(400).send({
           accessToken: null,
-          message: "Invalid Password!"
+          message: "Invalid Password!",
+          status: 400
         });
       }
 
@@ -81,7 +101,8 @@ exports.signin = (req, res) => {
           username: user.username,
           email: user.email,
           roles: authorities,
-          accessToken: token
+          accessToken: token,
+          status: 200
         });
       });
     })
