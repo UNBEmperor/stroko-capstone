@@ -98,10 +98,8 @@ exports.signin = (req, res) => {
         }
         res.status(200).send({
           status: 200,
-          id: user.id,
           username: user.username,
-          email: user.email,
-          roles: authorities,
+          message: "User logged successfully",
           accessToken: token
         });
       });

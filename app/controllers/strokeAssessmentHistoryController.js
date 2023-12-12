@@ -28,7 +28,10 @@ exports.findAll = (req, res) => {
             message: "No stroke assessments found"
            });
         }
-        res.send(strokeAssessments);
+        res.status(200).send({
+          status: 200,
+          data: strokeAssessments
+        });
       })
       .catch((err) => {
         res.status(500).send({ 

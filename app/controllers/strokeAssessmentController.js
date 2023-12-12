@@ -30,16 +30,16 @@ exports.create = (req, res) => {
     nama: req.body.nama,
     usia: req.body.usia,
     gender: req.body.gender,
+    levelBMI: req.body.levelBMI,
     hipertensi: req.body.hipertensi,
     diabetes: req.body.diabetes,
     penyakitJantung: req.body.penyakitJantung,
-    merokok: req.body.merokok,
-    levelBMI: req.body.levelBMI,
-    konsumsiAlkohol: req.body.konsumsiAlkohol,
-    aktivitasFisik: req.body.aktivitasFisik,
     riwayatStrokePribadi: req.body.riwayatStrokePribadi,
     riwayatStrokeKeluarga: req.body.riwayatStrokeKeluarga,
-    prediksiStroke: req.body.prediksiStroke
+    prediksiStroke: req.body.prediksiStroke,
+    merokok: req.body.merokok,
+    konsumsiAlkohol: req.body.konsumsiAlkohol,
+    aktivitasFisik: req.body.aktivitasFisik
   };
 
   // Save Stroke Assessment in the database
