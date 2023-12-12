@@ -24,13 +24,14 @@ db.sequelize.sync();
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
+  res.json({ message: "Welcome to STROKO." });
 });
 
 // routes
 require('./routes/authRoutes')(app);
 require('./routes/userRoutes')(app);
 require('./routes/strokeAssessmentRoutes')(app);
+require('./routes/strokeAssessmentHistoryRoutes')(app);
 
 
 // set port, listen for requests

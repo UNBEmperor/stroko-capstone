@@ -8,6 +8,7 @@ verifyToken = (req, res, next) => {
 
   if (!token) {
     return res.status(403).send({
+      status: 403,
       message: "No token provided!"
     });
   }
@@ -17,6 +18,7 @@ verifyToken = (req, res, next) => {
             (err, decoded) => {
               if (err) {
                 return res.status(401).send({
+                  status: 401,
                   message: "Unauthorized!",
                 });
               }
@@ -36,6 +38,7 @@ isUserPremium = (req, res, next) => {
       }
 
       res.status(403).send({
+        status: 403,
         message: "Require Premium Role!"
       });
       return;

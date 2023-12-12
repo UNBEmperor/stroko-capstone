@@ -13,8 +13,8 @@ exports.signup = (req, res) => {
   const { password } = req.body;
   if (password.length < 8) {
     return res.status(400).send({ 
-      message: "Password should be at least 8 characters long.",
-      status: 400
+      status: 400,
+      message: "Password should be at least 8 characters long."
     });
   }
   User.create({
@@ -32,26 +32,26 @@ exports.signup = (req, res) => {
           }
         }).then(roles => {
           user.setRoles(roles).then(() => {
-            res.send({ 
-              message: "User registered successfully!",
-              status: 200
+            res.status(200).send({ 
+              status: 200,
+              message: "User registered successfully!"
             });
           });
         });
       } else {
         // user role = 1
         user.setRoles([1]).then(() => {
-          res.send({ 
-            message: "User registered successfully!",
-            status: 200
+          res.status(200).send({ 
+            status: 200,
+            message: "User registered successfully!"
           });
         });
       }
     })
     .catch(err => {
       res.status(500).send({ 
-        message: err.message,
-        status: 500
+        status: 500,
+        message: err.message
       });
     });
 };
@@ -65,8 +65,8 @@ exports.signin = (req, res) => {
     .then(user => {
       if (!user) {
         return res.status(404).send({ 
-          message: "User Not found.", 
-          status: 404 
+          status: 404,
+          message: "User Not found."
         });
       }
 
@@ -77,9 +77,9 @@ exports.signin = (req, res) => {
 
       if (!passwordIsValid) {
         return res.status(400).send({
+          status: 400,
           accessToken: null,
-          message: "Invalid Password!",
-          status: 400
+          message: "Invalid Password!"
         });
       }
 
@@ -97,16 +97,19 @@ exports.signin = (req, res) => {
           authorities.push("ROLE_" + roles[i].name.toUpperCase());
         }
         res.status(200).send({
+          status: 200,
           id: user.id,
           username: user.username,
           email: user.email,
           roles: authorities,
-          accessToken: token,
-          status: 200
+          accessToken: token
         });
       });
     })
     .catch(err => {
-      res.status(500).send({ message: err.message });
+      res.status(500).send({ 
+        status: 500,
+        message: err.message
+       });
     });
 };
