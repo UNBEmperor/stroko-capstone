@@ -12,6 +12,9 @@ module.exports = (sequelize, Sequelize) => {
       gender: {
         type: Sequelize.BOOLEAN
       },
+      levelBMI: {
+        type: Sequelize.INTEGER
+      },
       hipertensi: {
         type: Sequelize.BOOLEAN
       },
@@ -21,26 +24,24 @@ module.exports = (sequelize, Sequelize) => {
       penyakitJantung: {
         type: Sequelize.BOOLEAN
       },
-      merokok: {
-        type: Sequelize.BOOLEAN
-      },
-      levelBMI: {
-        type: Sequelize.INTEGER
-      },
-      konsumsiAlkohol: {
-        type: Sequelize.ENUM('Tidak Pernah', 'Jarang Sekali', 'Jarang', 'Sering')
-      },
-      aktivitasFisik: {
-        type: Sequelize.ENUM('Rendah', 'Sedang', 'Tinggi')
-      },
       riwayatStrokePribadi: {
         type: Sequelize.BOOLEAN
       },
       riwayatStrokeKeluarga: {
         type: Sequelize.BOOLEAN
       },
+      merokok: {
+        type: Sequelize.ENUM('0', '1', '2')
+      },
+      konsumsiAlkohol: {
+        type: Sequelize.ENUM('0', '1', '2', '3')
+      },
+      aktivitasFisik: {
+        type: Sequelize.ENUM('0', '1', '2')
+      },
       prediksiStroke: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.BOOLEAN,
+        defaultValue: false
       }
     });
   

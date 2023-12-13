@@ -36,10 +36,10 @@ exports.create = (req, res) => {
     penyakitJantung: req.body.penyakitJantung,
     riwayatStrokePribadi: req.body.riwayatStrokePribadi,
     riwayatStrokeKeluarga: req.body.riwayatStrokeKeluarga,
-    prediksiStroke: req.body.prediksiStroke,
     merokok: req.body.merokok,
     konsumsiAlkohol: req.body.konsumsiAlkohol,
-    aktivitasFisik: req.body.aktivitasFisik
+    aktivitasFisik: req.body.aktivitasFisik,
+    prediksiStroke: req.body.prediksiStroke
   };
 
   // Save Stroke Assessment in the database

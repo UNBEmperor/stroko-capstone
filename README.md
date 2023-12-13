@@ -57,10 +57,10 @@
   - `"penyakitJantung"`: `'bool'`
   - `"riwayatStrokePribadi"`: `'bool'`
   - `"riwayatStrokeKeluarga"`: `'bool'`
-  - `"merokok"`: `'bool'`
-  - `"konsumsiAlkohol"`: `'bool'`
-  - `"aktivitasFisik"`: `'bool'`
-  - `"prediksiStroke"`: `'bool'` (false default)
+  - `"merokok"`: `'string'` (enum)
+  - `"konsumsiAlkohol"`: `'string'` (enum)
+  - `"aktivitasFisik"`: `'string'` (enum)
+  - `"prediksiStroke"`: `'bool'` (Auto fill with false)
 
 - Response:
 
@@ -69,23 +69,23 @@
   "status": 200
   "password": "StrokeAssessment added successfully"
   "data": {
-        "id": 18,
+        "prediksiStroke": false,
+        "id": 1,
         "idUsers": 2,
-        "nama": "Clausewitz",
-        "usia": 32,
+        "nama": "Vlad",
+        "usia": 61,
         "gender": false,
-        "levelBMI": 27,
+        "levelBMI": 23,
         "hipertensi": false,
         "diabetes": false,
-        "penyakitJantung": true,
-        "merokok": false,
-        "konsumsiAlkohol": "Jarang",
-        "aktivitasFisik": "Tinggi",
+        "penyakitJantung": false,
         "riwayatStrokePribadi": false,
-        "riwayatStrokeKeluarga": true,
-        "prediksiStroke": false, (Alter table after result came out?)
-        "updatedAt": "2023-12-12T08:22:09.830Z",
-        "createdAt": "2023-12-12T08:22:09.830Z"
+        "riwayatStrokeKeluarga": false,
+        "merokok": "0",
+        "konsumsiAlkohol": "1",
+        "aktivitasFisik": "2",
+        "updatedAt": "2023-12-13T10:44:17.896Z",
+        "createdAt": "2023-12-13T10:44:17.896Z"
   }
 }
 ```
@@ -103,61 +103,42 @@
   "status": 200,
   "data": [
     {
-      "id": 2,
-      "idUsers": 1,
-      "nama": "Alice Johnson",
-      "usia": 50,
+      "id": 1,
+      "idUsers": 2,
+      "nama": "Vlad",
+      "usia": 61,
       "gender": false,
-      "hipertensi": true,
-      "diabetes": true,
-      "penyakitJantung": true,
-      "merokok": true,
-      "levelBMI": 30,
-      "konsumsiAlkohol": "Jarang Sekali",
-      "aktivitasFisik": "Sedang",
+      "levelBMI": 23,
+      "hipertensi": false,
+      "diabetes": false,
+      "penyakitJantung": false,
       "riwayatStrokePribadi": false,
       "riwayatStrokeKeluarga": false,
-      "prediksiStroke": true,
-      "createdAt": "2023-12-10T05:43:45.000Z",
-      "updatedAt": "2023-12-10T05:43:45.000Z"
+      "merokok": "0",
+      "konsumsiAlkohol": "1",
+      "aktivitasFisik": "2",
+      "prediksiStroke": false,
+      "createdAt": "2023-12-13T10:44:17.000Z",
+      "updatedAt": "2023-12-13T10:44:17.000Z"
     },
     {
-      "id": 7,
-      "idUsers": 1,
-      "nama": "Jurgen",
+      "id": 2,
+      "idUsers": 2,
+      "nama": "Konstantin",
       "usia": 41,
       "gender": false,
+      "levelBMI": 21,
       "hipertensi": false,
       "diabetes": false,
       "penyakitJantung": true,
-      "merokok": false,
-      "levelBMI": 27,
-      "konsumsiAlkohol": "Tidak Pernah",
-      "aktivitasFisik": "Tinggi",
       "riwayatStrokePribadi": false,
       "riwayatStrokeKeluarga": true,
+      "merokok": "1",
+      "konsumsiAlkohol": "3",
+      "aktivitasFisik": "2",
       "prediksiStroke": false,
-      "createdAt": "2023-12-11T06:47:05.000Z",
-      "updatedAt": "2023-12-11T06:47:05.000Z"
-    },
-    {
-      "id": 8,
-      "idUsers": 1,
-      "nama": "Hans Peiper",
-      "usia": 31,
-      "gender": false,
-      "hipertensi": false,
-      "diabetes": false,
-      "penyakitJantung": true,
-      "merokok": false,
-      "levelBMI": 27,
-      "konsumsiAlkohol": "Jarang",
-      "aktivitasFisik": "Tinggi",
-      "riwayatStrokePribadi": false,
-      "riwayatStrokeKeluarga": true,
-      "prediksiStroke": false,
-      "createdAt": "2023-12-11T06:49:48.000Z",
-      "updatedAt": "2023-12-11T06:49:48.000Z"
+      "createdAt": "2023-12-13T10:46:19.000Z",
+      "updatedAt": "2023-12-13T10:46:19.000Z"
     }
   ]
 }
