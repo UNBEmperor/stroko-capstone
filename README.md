@@ -17,7 +17,7 @@
 ```json
 {
   "status": 201,
-  "password": "User registered successfully"
+  "message": "User registered successfully"
 }
 ```
 
@@ -34,9 +34,9 @@
 
 ```json
 {
-  "status": 200
-  "message": "User logged successfully"
-  "x-access-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+  "status": 200,
+  "message": "User logged successfully",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
 }
 ```
 
@@ -47,7 +47,7 @@
 - Header: x-access-token
 - Request Body:
 
-  - `"idUsers"`: `'num'` (Auto fill with userId)
+  - `"idUsers"`: `'num'` (Auto fill with userId),
   - `"nama"`: `'string'`
   - `"usia"`: `'num'`
   - `"gender"`: `'bool'`
@@ -66,26 +66,26 @@
 
 ```json
 {
-  "status": 200
-  "password": "StrokeAssessment added successfully"
+  "status": 200,
+  "message": "StrokeAssessment added successfully",
   "data": {
-        "prediksiStroke": false,
-        "id": 1,
-        "idUsers": 2,
-        "nama": "Vlad",
-        "usia": 61,
-        "gender": false,
-        "levelBMI": 23,
-        "hipertensi": false,
-        "diabetes": false,
-        "penyakitJantung": false,
-        "riwayatStrokePribadi": false,
-        "riwayatStrokeKeluarga": false,
-        "merokok": "0",
-        "konsumsiAlkohol": "1",
-        "aktivitasFisik": "2",
-        "updatedAt": "2023-12-13T10:44:17.896Z",
-        "createdAt": "2023-12-13T10:44:17.896Z"
+    "prediksiStroke": false,
+    "id": 1,
+    "idUsers": 2,
+    "nama": "Vlad",
+    "usia": 61,
+    "gender": false,
+    "levelBMI": 23,
+    "hipertensi": false,
+    "diabetes": false,
+    "penyakitJantung": false,
+    "riwayatStrokePribadi": false,
+    "riwayatStrokeKeluarga": false,
+    "merokok": "0",
+    "konsumsiAlkohol": "1",
+    "aktivitasFisik": "2",
+    "updatedAt": "2023-12-13T10:44:17.896Z",
+    "createdAt": "2023-12-13T10:44:17.896Z"
   }
 }
 ```
