@@ -35,7 +35,7 @@
 ```json
 {
   "status": 200
-  "password": "User logged successfully"
+  "message": "User logged successfully"
   "x-access-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
 }
 ```
