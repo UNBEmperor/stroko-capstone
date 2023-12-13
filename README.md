@@ -36,7 +36,7 @@
 {
   "status": 200
   "password": "User logged successfully"
-"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+  "x-access-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
 }
 ```
 
