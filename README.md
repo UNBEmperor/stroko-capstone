@@ -8,8 +8,8 @@
 - Endpoint: /api/auth/signup
 - Request Body:
 
-  - `"username"`: `'string'`, must be unique
   - `"email"`: `'string'`, must be unique
+  - `"username"`: `'string'`
   - `"password"`: `'string'`, must be at least 8 characters
 
 - Response:
@@ -27,7 +27,7 @@
 - Endpoint: /api/auth/signin
 - Request Body:
 
-  - `"username"`: `'string'`
+  - `"email"`: `'string'`
   - `"password"`: `'string'`
 
 - Response:
@@ -35,6 +35,7 @@
 ```json
 {
   "status": 200,
+  "id": "1",
   "message": "User logged successfully",
   "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
 }

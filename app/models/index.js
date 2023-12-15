@@ -25,6 +25,7 @@ db.sequelize = sequelize;
 db.user = require("../models/userModel.js")(sequelize, Sequelize);
 db.role = require("../models/roleModel.js")(sequelize, Sequelize);
 db.stroke_assessment = require("../models/strokeAssessmentModel.js")(sequelize, Sequelize);
+db.stroke_assessment = require("../models/foodRecomendationModel.js")(sequelize, Sequelize);
 
 
 db.user.hasMany(db.stroke_assessment, { foreignKey: 'idUsers' });

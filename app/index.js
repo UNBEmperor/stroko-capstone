@@ -32,6 +32,7 @@ require('./routes/authRoutes')(app);
 require('./routes/userRoutes')(app);
 require('./routes/strokeAssessmentRoutes')(app);
 require('./routes/strokeAssessmentHistoryRoutes')(app);
+//require('./routes/foodRecomendationRoutes')(app);
 
 
 // set port, listen for requests
@@ -40,15 +41,3 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
 
-function initial() {
-  Role.create({
-    id: 1,
-    name: "user"
-  });
- 
-  Role.create({
-    id: 2,
-    name: "userPremium"
-  });
-
-}

@@ -59,7 +59,7 @@ exports.signup = (req, res) => {
 exports.signin = (req, res) => {
   User.findOne({
     where: {
-      username: req.body.username
+      email: req.body.email
     }
   })
     .then(user => {
@@ -98,7 +98,7 @@ exports.signin = (req, res) => {
         }
         res.status(200).send({
           status: 200,
-          username: user.username,
+          id: user.id,
           message: "User logged successfully",
           accessToken: token
         });
