@@ -1,5 +1,5 @@
 module.exports = (sequelize, Sequelize) => {
-    const FoodRecomendation = sequelize.define("food_recomendation", {
+    const FoodRecommendation = sequelize.define("food_recommendation", {
       idStrokeAssessment: {
         type: Sequelize.INTEGER
       },
@@ -20,11 +20,6 @@ module.exports = (sequelize, Sequelize) => {
       }
     });
   
-    return FoodRecomendation;
+    return FoodRecommendation;
   };
   
-// nama makanan
-// kandungan1
-// kandunganN
-// keterangan
-// foto

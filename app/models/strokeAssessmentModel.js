@@ -13,7 +13,7 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.BOOLEAN
       },
       levelBMI: {
-        type: Sequelize.INTEGER
+        type: Sequelize.FLOAT
       },
       hipertensi: {
         type: Sequelize.BOOLEAN

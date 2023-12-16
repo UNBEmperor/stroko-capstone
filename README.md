@@ -8,9 +8,9 @@
 - Endpoint: /api/auth/signup
 - Request Body:
 
-  - `"email"`: `'string'`, must be unique
+  - `"email"`: `'string'`, must be unique and using email format
   - `"username"`: `'string'`
-  - `"password"`: `'string'`, must be at least 8 characters
+  - `"password"`: `'string'`, must be at least 8 characters, contain both letters and numbers
 
 - Response:
 
@@ -67,8 +67,8 @@
 
 ```json
 {
-  "status": 200,
-  "message": "StrokeAssessment added successfully",
+  "status": 201,
+  "message": "StrokeAssessment created successfully",
   "data": {
     "prediksiStroke": false,
     "id": 1,
@@ -142,5 +142,109 @@
       "updatedAt": "2023-12-13T10:46:19.000Z"
     }
   ]
+}
+```
+
+## Stroke Assessment History Delete
+
+- Method: DELETE
+- Endpoint: /api/stroke-assessment-history/:id
+- Header: x-access-token
+
+- Response:
+
+```json
+{
+  "status": 200,
+  "message": "Stroke Assessment was deleted successfully!",
+  "id": 13
+}
+```
+
+## Food Recomendation
+
+- Method: POST
+- Endpoint: /api/food-recomendation
+- Header: x-access-token
+- Request Body:
+
+  - `"idStrokeAssessment"`: `'num'`
+  - `"namaMakanan"`: `'string'`
+  - `"kandungan1"`: `'num'`
+  - `"kandunganN"`: `'num'`
+  - `"keterangan"`: `'string'`
+  - `"fotoMakanan"`: `'string'`
+
+- Response:
+
+```json
+{
+  "status": 201,
+  "message": "FoodRecomendation added successfully",
+  "data": {
+    "id": 24,
+    "idStrokeAssessment": 2,
+    "namaMakanan": "Roti Manis",
+    "kandungan1": 12.12,
+    "kandunganN": 9.11,
+    "keterangan": "Lorem Ipsum Sit Amet Dolor",
+    "fotoMakanan": "https://linkbucketnya-mungkin",
+    "updatedAt": "2023-12-16T07:23:26.162Z",
+    "createdAt": "2023-12-16T07:23:26.162Z"
+  }
+}
+```
+
+## Food Recomendation History
+
+- Method: GET
+- Endpoint: /api/food-recomendation-history/:strokeAssessmentId
+- Header: x-access-token
+
+- Response:
+
+```json
+{
+  "status": 200,
+  "data": [
+    {
+      "id": 6,
+      "idStrokeAssessment": 2,
+      "namaMakanan": "Roti Pangsit",
+      "kandungan1": 12.12,
+      "kandunganN": 9.11,
+      "keterangan": "Lorem Ipsum Sit Amet Dolor",
+      "fotoMakanan": "Foto Makanan Roti Tawar",
+      "createdAt": "2023-12-16T04:03:01.000Z",
+      "updatedAt": "2023-12-16T04:03:01.000Z"
+    },
+    {
+      "id": 7,
+      "idStrokeAssessment": 2,
+      "namaMakanan": "Roti Kari",
+      "kandungan1": 12.12,
+      "kandunganN": 9.11,
+      "keterangan": "Lorem Ipsum Sit Amet Dolor",
+      "fotoMakanan": "Foto Makanan Roti Tawar",
+      "createdAt": "2023-12-16T04:03:04.000Z",
+      "updatedAt": "2023-12-16T04:03:04.000Z"
+    }
+  ]
+}
+```
+
+## Food Recomendation Delete
+
+- Method: DELETE
+- Endpoint: /api/food-recomendation-history/:id
+- Header: x-access-token
+
+- Response:
+
+```json
+{
+  "status": 200,
+  "message": "Food Recommendation was deleted successfully!",
+  "id": 26
 }
 ```

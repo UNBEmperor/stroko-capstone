@@ -8,15 +8,37 @@ const Op = db.Sequelize.Op;
 var jwt = require("jsonwebtoken");
 var bcrypt = require("bcryptjs");
 
+
+
 exports.signup = (req, res) => {
   
   const { password } = req.body;
+  const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!req.body.email.match(emailRegex)) {
+    return res.status(400).send({
+      status: 400,
+      message: "Invalid email format."
+    });
+  }
+
   if (password.length < 8) {
     return res.status(400).send({ 
       status: 400,
       message: "Password should be at least 8 characters long."
     });
   }
+
+  if (!password.match(passwordRegex)) {
+    return res.status(400).send({
+      status: 400,
+      message: "Password should contain both letters and numbers."
+    });
+  }
+
+  
+
   User.create({
     username: req.body.username,
     email: req.body.email,
@@ -32,8 +54,8 @@ exports.signup = (req, res) => {
           }
         }).then(roles => {
           user.setRoles(roles).then(() => {
-            res.status(200).send({ 
-              status: 200,
+            res.status(201).send({ 
+              status: 201,
               message: "User registered successfully!"
             });
           });
@@ -41,8 +63,8 @@ exports.signup = (req, res) => {
       } else {
         // user role = 1
         user.setRoles([1]).then(() => {
-          res.status(200).send({ 
-            status: 200,
+          res.status(201).send({ 
+            status: 201,
             message: "User registered successfully!"
           });
         });

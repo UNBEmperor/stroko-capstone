@@ -25,12 +25,14 @@ db.sequelize = sequelize;
 db.user = require("../models/userModel.js")(sequelize, Sequelize);
 db.role = require("../models/roleModel.js")(sequelize, Sequelize);
 db.stroke_assessment = require("../models/strokeAssessmentModel.js")(sequelize, Sequelize);
-db.stroke_assessment = require("../models/foodRecomendationModel.js")(sequelize, Sequelize);
+db.food_recommendation = require("../models/foodRecommendationModel.js")(sequelize, Sequelize);
 
 
 db.user.hasMany(db.stroke_assessment, { foreignKey: 'idUsers' });
 db.stroke_assessment.belongsTo(db.user, { foreignKey: 'idUsers' });
 
+db.stroke_assessment.hasMany(db.food_recommendation, { foreignKey: 'idStrokeAssessment' });
+db.food_recommendation.belongsTo(db.stroke_assessment, { foreignKey: 'idStrokeAssessment' });
 
 db.role.belongsToMany(db.user, {
   through: "user_roles"

@@ -45,9 +45,9 @@ exports.create = (req, res) => {
   // Save Stroke Assessment in the database
   StrokeAssessment.create(strokeData)
   .then(data => {
-    res.status(200).send({
+    res.status(201).send({
       status: 200,
-      message: "StrokeAssessment added successfully",
+      message: "StrokeAssessment created successfully",
       data: data
     });
   })

@@ -1,4 +1,4 @@
-const foodRecomendationController = require("../controllers/foodRecomendationController");
+const foodRecommendationController = require("../controllers/foodRecommendationController");
 
 module.exports = function(app) {
   app.use(function(req, res, next) {
@@ -10,7 +10,7 @@ module.exports = function(app) {
   });
 
   // Create a new food recomendation
-  app.post("/api/food-recomendation", foodRecomendationController.create);
+  app.post("/api/food-recommendation", foodRecommendationController.create);
 
 };
 

@@ -46,12 +46,6 @@ exports.findAll = (req, res) => {
 exports.delete = (req, res) => {
   const token = req.headers["x-access-token"];
 
-  if (!token) {
-    return res.status(403).send({
-      status: 403,
-      message: "No token provided!"
-    });
-  }
 
   jwt.verify(token, config.secret, (err, decoded) => {
     if (err) {
@@ -61,7 +55,19 @@ exports.delete = (req, res) => {
       });
     }
 
+    const userId = decoded.id;
     const id = req.params.id;
+
+    StrokeAssessment.findOne({
+      where: { id: id, idUsers: userId }
+    })
+      .then(strokeAssessment => {
+        if (!strokeAssessment) {
+          return res.status(404).send({
+            status: 404,
+            message: `Cannot delete Stroke Assessment with id=${id}. Maybe Stroke Assessment was not found!`,
+          });
+        }
 
     StrokeAssessment.destroy({
       where: { id: id }
@@ -70,7 +76,8 @@ exports.delete = (req, res) => {
         if (num == 1) {
           res.status(200).send({
             status: 200,
-            message: "Stroke Assessment was deleted successfully!"
+            message: "Stroke Assessment was deleted successfully!",
+            id: strokeAssessment.id,
           });
         } else {
           res.status(404).send({
@@ -86,4 +93,5 @@ exports.delete = (req, res) => {
         });
       });
   });
+});
 };

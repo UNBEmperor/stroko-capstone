@@ -32,7 +32,8 @@ require('./routes/authRoutes')(app);
 require('./routes/userRoutes')(app);
 require('./routes/strokeAssessmentRoutes')(app);
 require('./routes/strokeAssessmentHistoryRoutes')(app);
-//require('./routes/foodRecomendationRoutes')(app);
+require('./routes/foodRecomendationRoutes')(app);
+require('./routes/foodRecomendationHistoryRoutes')(app);
 
 
 // set port, listen for requests
