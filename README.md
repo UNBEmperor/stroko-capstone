@@ -214,7 +214,7 @@
       "kandungan1": 12.12,
       "kandunganN": 9.11,
       "keterangan": "Lorem Ipsum Sit Amet Dolor",
-      "fotoMakanan": "Foto Makanan Roti Tawar",
+      "fotoMakanan": "https://linkbucketnya-mungkin",
       "createdAt": "2023-12-16T04:03:01.000Z",
       "updatedAt": "2023-12-16T04:03:01.000Z"
     },
@@ -225,7 +225,7 @@
       "kandungan1": 12.12,
       "kandunganN": 9.11,
       "keterangan": "Lorem Ipsum Sit Amet Dolor",
-      "fotoMakanan": "Foto Makanan Roti Tawar",
+      "fotoMakanan": "https://linkbucketnya-mungkin",
       "createdAt": "2023-12-16T04:03:04.000Z",
       "updatedAt": "2023-12-16T04:03:04.000Z"
     }
