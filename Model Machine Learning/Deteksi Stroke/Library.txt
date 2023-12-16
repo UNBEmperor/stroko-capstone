@@ -1,0 +1,11 @@
+Name: tensorflow
+Version: 2.15.0
+
+Name: pandas
+Version: 1.5.3
+
+Name: numpy
+Version: 1.23.5
+
+Name: matplotlib
+Version: 3.7.1
