@@ -161,10 +161,10 @@
 }
 ```
 
-## Food Recomendation
+## Food Recommendation
 
 - Method: POST
-- Endpoint: /api/food-recomendation
+- Endpoint: /api/food-recommendation
 - Header: x-access-token
 - Request Body:
 
@@ -180,7 +180,7 @@
 ```json
 {
   "status": 201,
-  "message": "FoodRecomendation added successfully",
+  "message": "FoodRecommendation added successfully",
   "data": {
     "id": 24,
     "idStrokeAssessment": 2,
@@ -195,10 +195,10 @@
 }
 ```
 
-## Food Recomendation History
+## Food Recommendation History
 
 - Method: GET
-- Endpoint: /api/food-recomendation-history/:strokeAssessmentId
+- Endpoint: /api/food-recommendation-history/:strokeAssessmentId
 - Header: x-access-token
 
 - Response:
@@ -233,10 +233,10 @@
 }
 ```
 
-## Food Recomendation Delete
+## Food Recommendation Delete
 
 - Method: DELETE
-- Endpoint: /api/food-recomendation-history/:id
+- Endpoint: /api/food-recommendation-history/:id
 - Header: x-access-token
 
 - Response:
