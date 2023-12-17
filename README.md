@@ -248,3 +248,59 @@
   "id": 26
 }
 ```
+
+## Health Education Preview
+
+- Method: GET
+- Endpoint: /api/health-education
+- Header: x-access-token
+
+- Response:
+
+```json
+{
+  "status": 200,
+  "data": [
+    {
+      "judulArtikel": "Sample Title",
+      "tanggal": "2023-12-15",
+      "penerbit": "Publisher Name"
+    },
+    {
+      "judulArtikel": "Sample Title",
+      "tanggal": "2023-12-15",
+      "penerbit": "Publisher Name"
+    },
+    {
+      "judulArtikel": "Sample Title",
+      "tanggal": "2023-12-15",
+      "penerbit": "Publisher Name"
+    }
+  ]
+}
+```
+
+## Health Education Detail
+
+- Method: GET
+- Endpoint: /api/health-education/:id
+- Header: x-access-token
+
+- Response:
+
+```json
+{
+  "status": 200,
+  "data": {
+    "id": 2,
+    "judulArtikel": "Sample Title",
+    "isiArtikel": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nulla vel enim faucibus consectetur eu et quam. \n\nMorbi quis vehicula libero. Cras vulputate condimentum eros, eu consectetur tortor.",
+    "tanggal": "2023-12-15",
+    "penerbit": "Publisher Name",
+    "penulis": "Author Name",
+    "fotoArtikel": "https://example.com/image.jpg",
+    "createdAt": "2023-12-17T07:12:05.000Z",
+    "updatedAt": "2023-12-17T07:12:05.000Z"
+  }
+}
+```
