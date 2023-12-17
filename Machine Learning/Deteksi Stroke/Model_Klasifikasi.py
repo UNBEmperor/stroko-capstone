@@ -65,12 +65,13 @@ x_train, x_test, y_train, y_test = train_test_split(x,y, test_size= 0.3)
 print('Training dataset:\n', x_train.shape, y_train.shape)
 print('Test dataset:\n', x_test.shape, y_test.shape)
 
-# Mengonversi data yang telah diubah skala kembali ke data asli
+# Inversi transformasi untuk mendapatkan data dalam skala asli
 x_restored = standardscaler.inverse_transform(x_train)
 restored_data = pd.DataFrame(data=x_restored, columns=x_train.columns)
-
-restored_data['Diagnosis'] = labelencoder.inverse_transform(y_train.astype(int))
-
+restored_data = restored_data.drop(columns=['BMI'])
+restored_data = restored_data.astype(int)
+restored_data.insert(5, 'BMI', x_restored[:, x_train.columns.get_loc('BMI')])
+restored_data['Diagnosis'] = labelencoder.inverse_transform(y_train)
 restored_data
 
 restored_data.to_csv('traindata.csv', index=False)
