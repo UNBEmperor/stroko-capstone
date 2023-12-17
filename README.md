@@ -10,7 +10,7 @@
 
   - `"email"`: `'string'`, must be unique and using email format
   - `"username"`: `'string'`
-  - `"password"`: `'string'`, must be at least 8 characters, contain both letters and numbers
+  - `"password"`: `'string'`, must be at least 8 characters
 
 - Response:
 

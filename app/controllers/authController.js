@@ -13,7 +13,6 @@ var bcrypt = require("bcryptjs");
 exports.signup = (req, res) => {
   
   const { password } = req.body;
-  const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (!req.body.email.match(emailRegex)) {
@@ -29,15 +28,6 @@ exports.signup = (req, res) => {
       message: "Password should be at least 8 characters long."
     });
   }
-
-  if (!password.match(passwordRegex)) {
-    return res.status(400).send({
-      status: 400,
-      message: "Password should contain both letters and numbers."
-    });
-  }
-
-  
 
   User.create({
     username: req.body.username,
