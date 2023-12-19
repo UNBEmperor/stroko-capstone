@@ -2,6 +2,7 @@ Name: tensorflow
 Version: 2.15.0
 
 Name: sklearn
+Version: 1.2.2
 
 Name: pandas
 Version: 1.5.3
