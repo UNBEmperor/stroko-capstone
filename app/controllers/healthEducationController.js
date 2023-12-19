@@ -28,7 +28,8 @@ exports.findAll = (req, res) => {
         const responseData = healthEducation.map(healthEducation => ({
           judulArtikel: healthEducation.judulArtikel,
           tanggal: healthEducation.tanggal,
-          penerbit: healthEducation.penerbit
+          penerbit: healthEducation.penerbit,
+          fotoArtikel: healthEducation.fotoArtikel
         }));
 
         res.status(200).send({

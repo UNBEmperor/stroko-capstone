@@ -6,17 +6,24 @@ module.exports = (sequelize, Sequelize) => {
       namaMakanan: {
         type: Sequelize.STRING
       },
-      kandungan1: {
+      lemak: {
+        type: Sequelize.FLOAT
+      },  
+      karbohidrat: {
         type: Sequelize.FLOAT
       },
-      kandunganN: {
+      natrium: {
+        type: Sequelize.FLOAT
+      },
+      kalium: {
         type: Sequelize.FLOAT
       },
       keterangan: {
         type: Sequelize.STRING
       },
-      fotoMakanan: {
-        type: Sequelize.STRING
+      link: {
+        type: Sequelize.STRING,
+        defaultValue: "https://picsum.photos/200"
       }
     });
   
