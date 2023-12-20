@@ -2,16 +2,17 @@ import tensorflow as tf
 import sklearn
 from flask import Flask, jsonify, request
 from werkzeug.utils import secure_filename
-from tensorflow.keras.models import load_model
+import keras
+from keras.models import load_model
 from keras.layers import Dropout
 import numpy as np
 from PIL import Image
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
-with tf.keras.utils.custom_object_scope({'FixedDropout': Dropout}):
-    model_food_rec = tf.keras.models.load_model("Model_Rekomendasi.h5")
-    model_stroke_det = tf.keras.models.load_model("Model_Klasifikasi.h5")
+with keras.utils.custom_object_scope({'FixedDropout': Dropout}):
+    model_food_rec = keras.models.load_model("Model_Rekomendasi.h5")
+    model_stroke_det = keras.models.load_model("Model_Klasifikasi.h5")
 
 app = Flask(__name__)
 
