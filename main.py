@@ -121,13 +121,11 @@ def prediction():
         }), 405
 
 
+    if __name__ == "__main__":
+    #    app = create_app()
+        print(" Starting app...")
+        app.run(host="0.0.0.0", port=8080)
 
 
 
 
-
-
-
-if __name__ == "__main__":
-    # Dev only: run "python main.py" and open http://localhost:8080
-    app.run(host="localhost", port=8080, debug=True)

@@ -1,3 +1,0 @@
-runtime: python311
-service: stroko-ml
-entrypoint: gunicorn -b :$PORT main:app
