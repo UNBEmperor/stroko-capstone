@@ -23,7 +23,6 @@ module.exports = (sequelize, Sequelize) => {
       },
       link: {
         type: Sequelize.STRING,
-        defaultValue: "https://picsum.photos/200"
       }
     });
   

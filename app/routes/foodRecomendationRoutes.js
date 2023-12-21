@@ -10,7 +10,7 @@ module.exports = function(app) {
   });
 
   // Create a new food recomendation
-  app.post("/api/food-recommendation", foodRecommendationController.create);
+  app.post("/api/food-recommendation/", foodRecommendationController.create);
 
 };
 

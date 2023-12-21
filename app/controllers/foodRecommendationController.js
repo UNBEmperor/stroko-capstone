@@ -1,4 +1,5 @@
 const jwt = require("jsonwebtoken");
+const axios = require("axios");
 const config = require("../config/authConfig");
 const db = require("../models");
 const FoodRecommendation = db.food_recommendation;
@@ -21,7 +22,7 @@ exports.create = (req, res) => {
     const userId = decoded.id;
 
     StrokeAssessment.findOne({
-      where: { id: idStrokeAssessment, idUsers: userId }
+      where: { id: req.params.id, idUsers: userId }
     })
       .then(strokeAssessment => {
         if (!strokeAssessment) {

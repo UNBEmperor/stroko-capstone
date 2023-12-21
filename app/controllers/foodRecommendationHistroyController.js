@@ -1,6 +1,7 @@
 const jwt = require("jsonwebtoken");
 const config = require("../config/authConfig");
 const db = require("../models");
+const axios = require("axios");
 const FoodRecommendation = db.food_recommendation;
 
 
@@ -17,7 +18,6 @@ exports.findAll = (req, res) => {
     }
     const strokeAssessmentId = req.params.strokeAssessmentId;
     const userId = decoded.id;
-
   // Check if the user making the request owns the stroke assessment
   db.stroke_assessment.findOne({
     where: { id: strokeAssessmentId, idUsers: userId }
@@ -28,24 +28,44 @@ exports.findAll = (req, res) => {
         message: "Forbidden"
       });
     }
-
-    // Retrieve Food Recommendation associated with the user's ID
-    FoodRecommendation.findAll({
-      where: { idStrokeAssessment: strokeAssessmentId },
-    })
-      .then((foodRecommendations) => {
+    console.log(typeof strokeAssessment.dataValues.levelBMI, typeof 21);
+    
+    axios.post('https://backend-ml-qeg7ziwx4q-et.a.run.app/prediction/food-recommendation', {
+      // "Hipertensi":true,
+      // "Penyakit Jantung":true,
+      // "BMI":21,
+      // "Diabetes":true
+      
+      "bmi":strokeAssessment.dataValues.levelBMI,
+      "hypertension":strokeAssessment.dataValues.hipertensi,
+      "heart_disease":strokeAssessment.dataValues.penyakitJantung,
+      "avg_glucose_level":strokeAssessment.dataValues.diabetes
+    }) .then((foodRecommendations) => {
         if (!foodRecommendations || foodRecommendations.length === 0) {
           return res.status(404).send({ 
             status: 404,
             message: "No Food Recommendation found"
            });
         }
+        FoodRecommendation.create({
+          idStrokeAssessment: strokeAssessmentId,
+          namaMakanan: foodRecommendations.data.data['Nama Makanan'],
+          lemak: foodRecommendations.data.data.Lemak,
+          karbohidrat: foodRecommendations.data.data.Karbohidrat,
+          natrium: foodRecommendations.data.data.Natrium,
+          kalium: foodRecommendations.data.data.Kalium,
+          keterangan: foodRecommendations.data.data.Keterangan,
+          link: foodRecommendations.data.data.Link
+        })
+        console.log(foodRecommendations.data);
         res.status(200).send({
           status: 200,
-          data: foodRecommendations
+          data: foodRecommendations.data.data
         });
+
       })
       .catch((err) => {
+        console.log(err);
         res.status(500).send({ 
           status: 500,
           message: err.message || "Some error occurred while retrieving food recommendation"

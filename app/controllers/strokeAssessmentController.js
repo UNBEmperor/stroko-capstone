@@ -1,4 +1,5 @@
 const jwt = require("jsonwebtoken");
+const axios = require("axios");
 const config = require("../config/authConfig");
 const db = require("../models");
 const StrokeAssessment = db.stroke_assessment;
@@ -7,14 +8,7 @@ const StrokeAssessment = db.stroke_assessment;
 exports.create = (req, res) => {
   const token = req.headers["x-access-token"];
 
-  if (!token) {
-    return res.status(403).send({
-      status: 403,
-      message: "No token provided!"
-    });
-  }
-
-  jwt.verify(token, config.secret, (err, decoded) => {
+  jwt.verify(token, config.secret, async (err, decoded) => {
     if (err) {
       return res.status(401).send({
         status: 401,
@@ -42,14 +36,45 @@ exports.create = (req, res) => {
     prediksiStroke: req.body.prediksiStroke
   };
 
+  const response = await axios.post('https://backend-ml-qeg7ziwx4q-et.a.run.app/prediction/stroke-detection', {
+    "Umur":strokeData.usia,
+    "Jenis Kelamin":strokeData.gender,
+    "Hipertensi":strokeData.hipertensi,
+    "Penyakit Jantung":strokeData.penyakitJantung,
+    "Diabetes":strokeData.diabetes,
+    "BMI":strokeData.levelBMI,
+    "Status Merokok":parseInt(strokeData.merokok),
+    "Konsumsi Alkohol":parseInt(strokeData.konsumsiAlkohol),
+    "Aktivitas Fisik":parseInt(strokeData.aktivitasFisik),
+    "Riwayat Resiko Tinggi":strokeData.riwayatStrokePribadi,
+    "Riwayat Resiko Tinggi Keluarga":strokeData.riwayatStrokeKeluarga
+    
+      // "Umur":69,
+      // "Jenis Kelamin":1,
+      // "Hipertensi":1,
+      // "Penyakit Jantung":1,
+      // "Diabetes":1,
+      // "BMI":50.28,
+      // "Status Merokok":0,
+      // "Konsumsi Alkohol":2,
+      // "Aktivitas Fisik":0,
+      // "Riwayat Resiko Tinggi":0,
+      // "Riwayat Resiko Tinggi Keluarga":0
+  
+  
+  })
+  console.log(response.data.data.Diagnosis);
+
   // Save Stroke Assessment in the database
-  StrokeAssessment.create(strokeData)
+  StrokeAssessment.create({...strokeData, prediksiStroke:response.data.data.Diagnosis==="Resiko Rendah" ? false:true})
   .then(data => {
     res.status(201).send({
       status: 200,
       message: "StrokeAssessment created successfully",
       data: data
+
     });
+    
   })
   .catch(err => {
     res.status(500).send({
