@@ -1,4 +1,4 @@
-const foodRecommendationController = require("../controllers/foodRecommendationController");
+const foodRecommendationController = require("../controllers/foodRecommendationController.js");
 
 module.exports = function(app) {
   app.use(function(req, res, next) {
@@ -9,8 +9,13 @@ module.exports = function(app) {
     next();
   });
 
-  // Create a new food recomendation
-  app.post("/api/food-recommendation/", foodRecommendationController.create);
+  // Generate Stroke Assessments
+  app.get("/api/food-recommendation/:strokeAssessmentId", foodRecommendationController.generate);
+  
+  // Generate Stroke Assessments
+  app.get("/api/food-recommendation-history/:strokeAssessmentId", foodRecommendationController.findAll);
 
+  // Delete a Stroke Assessment by id
+  app.delete("/api/food-recommendation/:id", foodRecommendationController.delete);
 };
 

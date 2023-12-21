@@ -40,8 +40,7 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.ENUM('0', '1', '2')
       },
       prediksiStroke: {
-        type: Sequelize.BOOLEAN,
-        defaultValue: false
+        type: Sequelize.BOOLEAN
       }
     });
   

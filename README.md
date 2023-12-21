@@ -48,9 +48,9 @@
 - Header: x-access-token
 - Request Body:
 
-  - `"idUsers"`: `'num'` (Auto fill with userId),
+  - `"idUsers"`: `'int'` (Auto fill with userId),
   - `"nama"`: `'string'`
-  - `"usia"`: `'num'`
+  - `"usia"`: `'int'`
   - `"gender"`: `'bool'`
   - `"levelBMI"`: `'bool'`
   - `"hipertensi"`: `'bool'`
@@ -61,7 +61,6 @@
   - `"merokok"`: `'string'` (enum)
   - `"konsumsiAlkohol"`: `'string'` (enum)
   - `"aktivitasFisik"`: `'string'` (enum)
-  - `"prediksiStroke"`: `'bool'` (Auto fill with false)
 
 - Response:
 
@@ -161,36 +160,26 @@
 }
 ```
 
-## Food Recommendation
+## Generate Food Recommendation
 
-- Method: POST
-- Endpoint: /api/food-recommendation
+- Method: GET
+- Endpoint: /api/food-recommendation/:strokeAssessmentId
 - Header: x-access-token
-- Request Body:
-
-  - `"idStrokeAssessment"`: `'num'`
-  - `"namaMakanan"`: `'string'`
-  - `"kandungan1"`: `'num'`
-  - `"kandunganN"`: `'num'`
-  - `"keterangan"`: `'string'`
-  - `"fotoMakanan"`: `'string'`
 
 - Response:
 
 ```json
 {
-  "status": 201,
-  "message": "FoodRecommendation added successfully",
+  "status": 200,
   "data": {
-    "id": 24,
-    "idStrokeAssessment": 2,
-    "namaMakanan": "Roti Manis",
-    "kandungan1": 12.12,
-    "kandunganN": 9.11,
-    "keterangan": "Lorem Ipsum Sit Amet Dolor",
-    "fotoMakanan": "https://linkbucketnya-mungkin",
-    "updatedAt": "2023-12-16T07:23:26.162Z",
-    "createdAt": "2023-12-16T07:23:26.162Z"
+    "Kalium": 0.14,
+    "Karbohidrat": 4.8,
+    "Keterangan": "Daun Singkong Rebus adalah sayuran yang dimasak dengan cara direbus.",
+    "Lemak": 0.6,
+    "Link": "https://www.bantennews.co.id/wp-content/uploads/2019/06/Screenshot_2019-06-16-00-14-40-190_org.detikcom.rss_.jpg",
+    "Nama Makanan": "Daun Singkong Rebus",
+    "Natrium": 0.13,
+    "Serat": 1.6
   }
 }
 ```
@@ -208,26 +197,18 @@
   "status": 200,
   "data": [
     {
-      "id": 6,
-      "idStrokeAssessment": 2,
-      "namaMakanan": "Roti Pangsit",
-      "kandungan1": 12.12,
-      "kandunganN": 9.11,
-      "keterangan": "Lorem Ipsum Sit Amet Dolor",
-      "fotoMakanan": "https://linkbucketnya-mungkin",
-      "createdAt": "2023-12-16T04:03:01.000Z",
-      "updatedAt": "2023-12-16T04:03:01.000Z"
-    },
-    {
-      "id": 7,
-      "idStrokeAssessment": 2,
-      "namaMakanan": "Roti Kari",
-      "kandungan1": 12.12,
-      "kandunganN": 9.11,
-      "keterangan": "Lorem Ipsum Sit Amet Dolor",
-      "fotoMakanan": "https://linkbucketnya-mungkin",
-      "createdAt": "2023-12-16T04:03:04.000Z",
-      "updatedAt": "2023-12-16T04:03:04.000Z"
+      "id": 1,
+      "idStrokeAssessment": 1,
+      "namaMakanan": "Daun Singkong Rebus",
+      "lemak": 0.6,
+      "karbohidrat": 4.8,
+      "natrium": 0.13,
+      "kalium": 0.14,
+      "serat": 1.6,
+      "keterangan": "Daun Singkong Rebus adalah sayuran yang dimasak dengan cara direbus.",
+      "link": "https://www.bantennews.co.id/wp-content/uploads/2019/06/Screenshot_2019-06-16-00-14-40-190_org.detikcom.rss_.jpg",
+      "createdAt": "2023-12-21T09:54:43.000Z",
+      "updatedAt": "2023-12-21T09:54:43.000Z"
     }
   ]
 }
@@ -245,7 +226,7 @@
 {
   "status": 200,
   "message": "Food Recommendation was deleted successfully!",
-  "id": 26
+  "id": 3
 }
 ```
 
@@ -262,19 +243,18 @@
   "status": 200,
   "data": [
     {
-      "judulArtikel": "Sample Title",
-      "tanggal": "2023-12-15",
-      "penerbit": "Publisher Name"
+      "id": 1,
+      "judulArtikel": "Sample Title 1",
+      "tanggal": "15-12-2023",
+      "penerbit": "Publisher Name 1",
+      "fotoArtikel": "https://example.com/image1.jpg"
     },
     {
-      "judulArtikel": "Sample Title",
-      "tanggal": "2023-12-15",
-      "penerbit": "Publisher Name"
-    },
-    {
-      "judulArtikel": "Sample Title",
-      "tanggal": "2023-12-15",
-      "penerbit": "Publisher Name"
+      "id": 2,
+      "judulArtikel": "Sample Title 2",
+      "tanggal": "16-12-2023",
+      "penerbit": "Publisher Name 2",
+      "fotoArtikel": "https://example.com/image2.jpg"
     }
   ]
 }
@@ -293,12 +273,12 @@
   "status": 200,
   "data": {
     "id": 2,
-    "judulArtikel": "Sample Title",
+    "judulArtikel": "Sample Title 2",
     "isiArtikel": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nulla vel enim faucibus consectetur eu et quam. \n\nMorbi quis vehicula libero. Cras vulputate condimentum eros, eu consectetur tortor.",
-    "tanggal": "2023-12-15",
-    "penerbit": "Publisher Name",
-    "penulis": "Author Name",
-    "fotoArtikel": "https://example.com/image.jpg",
+    "tanggal": "16-12-2023",
+    "penerbit": "Publisher Name 2",
+    "penulis": "Author Name 2",
+    "fotoArtikel": "https://example.com/image2.jpg",
     "createdAt": "2023-12-17T07:12:05.000Z",
     "updatedAt": "2023-12-17T07:12:05.000Z"
   }

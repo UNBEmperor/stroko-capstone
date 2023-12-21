@@ -26,6 +26,7 @@ exports.findAll = (req, res) => {
            });
         }
         const responseData = healthEducation.map(healthEducation => ({
+          id: healthEducation.id,
           judulArtikel: healthEducation.judulArtikel,
           tanggal: healthEducation.tanggal,
           penerbit: healthEducation.penerbit,

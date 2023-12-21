@@ -32,7 +32,6 @@ require('./routes/userRoutes')(app);
 require('./routes/strokeAssessmentRoutes')(app);
 require('./routes/strokeAssessmentHistoryRoutes')(app);
 require('./routes/foodRecomendationRoutes')(app);
-require('./routes/foodRecomendationHistoryRoutes')(app);
 require('./routes/healthEducation')(app);
 
 

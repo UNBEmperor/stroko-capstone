@@ -48,20 +48,6 @@ exports.create = (req, res) => {
     "Aktivitas Fisik":parseInt(strokeData.aktivitasFisik),
     "Riwayat Resiko Tinggi":strokeData.riwayatStrokePribadi,
     "Riwayat Resiko Tinggi Keluarga":strokeData.riwayatStrokeKeluarga
-    
-      // "Umur":69,
-      // "Jenis Kelamin":1,
-      // "Hipertensi":1,
-      // "Penyakit Jantung":1,
-      // "Diabetes":1,
-      // "BMI":50.28,
-      // "Status Merokok":0,
-      // "Konsumsi Alkohol":2,
-      // "Aktivitas Fisik":0,
-      // "Riwayat Resiko Tinggi":0,
-      // "Riwayat Resiko Tinggi Keluarga":0
-  
-  
   })
   console.log(response.data.data.Diagnosis);
 

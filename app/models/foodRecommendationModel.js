@@ -18,8 +18,11 @@ module.exports = (sequelize, Sequelize) => {
       kalium: {
         type: Sequelize.FLOAT
       },
+      serat: {
+        type: Sequelize.FLOAT
+      },
       keterangan: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
       link: {
         type: Sequelize.STRING,
