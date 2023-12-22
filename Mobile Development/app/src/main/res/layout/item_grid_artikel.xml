@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/spacing_200"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/spacing_8"
+    app:cardCornerRadius="@dimen/font_12"
+    app:cardElevation="@dimen/spacing_4">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:padding="@dimen/spacing_16">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imgBarber"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_150"
+            android:contentDescription="icon"
+            android:src="@drawable/placeholder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius="@dimen/spacing_10" />
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="@dimen/spacing_0"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_12"
+            android:layout_marginEnd="@dimen/spacing_8"
+            android:text="@string/name_article"
+            android:textSize="@dimen/font_12"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_semibold"
+            app:layout_constraintEnd_toStartOf="@+id/imgBookmark"
+            app:layout_constraintStart_toStartOf="@+id/imgBarber"
+            app:layout_constraintTop_toBottomOf="@+id/imgBarber" />
+
+        <TextView
+            android:id="@+id/tvPenerbit"
+            android:layout_width="@dimen/spacing_0"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing_8"
+            android:text="@string/name_article"
+            android:textSize="@dimen/font_12"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_regular"
+            app:layout_constraintEnd_toStartOf="@+id/imgFavorite"
+            app:layout_constraintStart_toStartOf="@+id/tvTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginTop="@dimen/spacing_4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@id/tvPenerbit"
+            app:layout_constraintTop_toBottomOf="@id/tvPenerbit">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/dummy_date"
+                android:textSize="@dimen/font_8" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="@string/favorite"
+            android:focusable="true"
+            android:src="@drawable/ic_favorite_border"
+            app:layout_constraintEnd_toEndOf="@id/imgBarber"
+            app:layout_constraintTop_toTopOf="@+id/tvTitle"
+            app:tint="@color/colorAccent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

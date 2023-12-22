@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout"
+    android:orientation="vertical"
+    tools:context=".ui.foodrecomendation.FoodRecomendationActivity">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/flexboxLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_24"
+        android:layout_marginTop="@dimen/spacing_24"
+        android:layout_marginEnd="@dimen/spacing_24"
+        android:layout_marginBottom="@dimen/spacing_16"
+        app:alignItems="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_back"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textSize="13sp"
+            app:backgroundTint="@color/colorAccent"
+            app:cornerRadius="@dimen/spacing_10"
+            app:icon="@drawable/ic_back_arrow"
+            app:iconTint="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/food_recomendation"
+            android:textColor="@color/colorText1"
+            android:textSize="@dimen/font_16"
+            android:textStyle="bold" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_32"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:layout_marginEnd="@dimen/spacing_32"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/food_recomendation2"
+                android:textColor="@color/colorText1"
+                android:textSize="@dimen/font_18"
+                android:textStyle="bold"
+                tools:alpha="100" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/assesment_dummy2" />
+
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_1"
+                android:layout_marginHorizontal="@dimen/spacing_36"
+                android:layout_marginTop="@dimen/spacing_24"
+                android:layout_marginBottom="@dimen/spacing_12" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:layout_marginEnd="32dp"
+                android:text="@string/hipertensi"
+                android:textSize="@dimen/font_12"
+                android:textStyle="bold"
+                tools:alpha="100" />
+
+            <AutoCompleteTextView
+                android:id="@+id/edHipertensi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_32"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:autofillHints="name"
+                android:background="@drawable/bg_edit_text"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_dropdown"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/hipertensi_hint"
+                android:includeFontPadding="false"
+                android:inputType="none"
+                android:paddingHorizontal="@dimen/spacing_24"
+                android:paddingVertical="@dimen/spacing_16"
+                android:textSize="@dimen/font_12"
+                tools:alpha="100" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:layout_marginEnd="32dp"
+                android:text="@string/jantung"
+                android:textSize="@dimen/font_12"
+                android:textStyle="bold"
+                tools:alpha="100" />
+
+            <AutoCompleteTextView
+                android:id="@+id/edpenyakitJantung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_32"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:autofillHints="name"
+                android:background="@drawable/bg_edit_text"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_dropdown"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/jantung_hint"
+                android:includeFontPadding="false"
+                android:inputType="none"
+                android:paddingHorizontal="@dimen/spacing_24"
+                android:paddingVertical="@dimen/spacing_16"
+                android:textSize="@dimen/font_12"
+                tools:alpha="100" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/diabetes"
+                android:textSize="@dimen/font_13"
+                android:textStyle="bold"
+                tools:alpha="100" />
+
+            <AutoCompleteTextView
+                android:id="@+id/edDiabetes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_32"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:autofillHints="name"
+                android:background="@drawable/bg_edit_text"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_dropdown"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/diabetes_hint"
+                android:includeFontPadding="false"
+                android:inputType="none"
+                android:paddingHorizontal="@dimen/spacing_24"
+                android:paddingVertical="@dimen/spacing_16"
+                android:textSize="@dimen/font_12"
+                tools:alpha="100" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/weight"
+                android:textSize="@dimen/font_12"
+                android:textStyle="bold"
+                tools:alpha="100" />
+
+            <EditText
+                android:id="@+id/edWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_32"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:autofillHints="Masukkan tinggi badan dalam bentuk (cm)"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/hint_weight"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:paddingHorizontal="@dimen/spacing_24"
+                android:paddingVertical="@dimen/spacing_16"
+                android:textSize="@dimen/font_12"
+                tools:alpha="100" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/height"
+                android:textSize="@dimen/font_13"
+                android:textStyle="bold"
+                tools:alpha="100" />
+
+            <EditText
+                android:id="@+id/edHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_32"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:autofillHints="Masukkan berat badan dalam bentuk (kg)"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/hint_height"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:paddingHorizontal="@dimen/spacing_24"
+                android:paddingVertical="@dimen/spacing_16"
+                android:textSize="@dimen/font_13"
+                tools:alpha="100" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_1"
+                android:layout_marginHorizontal="@dimen/spacing_36"
+                android:layout_marginTop="@dimen/spacing_24"
+                android:layout_marginBottom="@dimen/spacing_12" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:layout_marginBottom="@dimen/spacing_8"
+                android:padding="@dimen/spacing_12">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/detailfood"
+                    android:layout_width="@dimen/spacing_84"
+                    android:layout_height="@dimen/spacing_72"
+                    android:src="@drawable/placeholder"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="@dimen/spacing_10" />
+
+                <TextView
+                    android:id="@+id/namefood"
+                    android:layout_width="@dimen/spacing_150"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_15"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/name_food"
+                    android:textSize="@dimen/font_12"
+                    app:layout_constraintStart_toEndOf="@id/detailfood"
+                    app:layout_constraintTop_toTopOf="@id/detailfood" />
+
+                <TextView
+                    android:id="@+id/information"
+                    android:layout_width="248dp"
+                    android:layout_height="31dp"
+                    android:layout_marginTop="@dimen/spacing_4"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:text="@string/information2"
+                    android:textSize="@dimen/font_8"
+                    android:fontFamily="@font/poppins_regular"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/namefood"
+                    app:layout_constraintTop_toBottomOf="@id/namefood" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnaddfood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="40dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:backgroundTint="@color/colorPrimary"
+                    android:contentDescription="icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/ic_add"
+                    app:tint="@android:color/white"
+                    tools:layout_editor_absoluteX="321dp"
+                    tools:layout_editor_absoluteY="-13dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_1"
+                android:layout_marginHorizontal="@dimen/spacing_36"
+                android:layout_marginTop="@dimen/spacing_24"
+                android:layout_marginBottom="@dimen/spacing_12" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

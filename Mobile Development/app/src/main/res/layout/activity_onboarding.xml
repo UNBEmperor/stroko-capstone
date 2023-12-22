@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/onboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout"
+    app:layoutDescription="@xml/activity_onboarding_scene"
+    tools:context=".ui.onboarding.OnboardingActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_onboarding1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgHero1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="@dimen/spacing_80"
+        android:contentDescription="@string/star"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_onboarding01" />
+
+    <TextView
+        android:id="@+id/titleOnboard1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/tittle_onboarding_01"
+        android:textColor="@color/colorText1"
+        android:textSize="@dimen/font_18"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgHero1"
+        app:layout_constraintStart_toStartOf="@+id/imgHero1"
+        app:layout_constraintTop_toBottomOf="@+id/imgHero1" />
+
+    <TextView
+        android:id="@+id/descOnboard1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="@string/desc_onboard_1"
+        android:textColor="@color/colorText2"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintEnd_toEndOf="@+id/imgHero1"
+        app:layout_constraintStart_toStartOf="@+id/imgHero1"
+        app:layout_constraintTop_toBottomOf="@+id/titleOnboard1" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="40dp"
+        app:altSrc="@drawable/ic_baseline_circle_24"
+        app:layout_constraintEnd_toStartOf="@+id/menu2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descOnboard1"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/colorAccent" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu2"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        app:altSrc="@drawable/ic_baseline_circle_24"
+        app:layout_constraintBottom_toBottomOf="@+id/menu1"
+        app:layout_constraintEnd_toStartOf="@+id/menu3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/menu1"
+        app:layout_constraintTop_toTopOf="@+id/menu1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/colorAccent" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu3"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="92dp"
+        app:altSrc="@drawable/ic_baseline_circle_24"
+        app:layout_constraintBottom_toBottomOf="@+id/menu2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/menu2"
+        app:layout_constraintTop_toTopOf="@+id/menu2"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/colorAccent" />
+
+
+    <ImageView
+        android:id="@+id/imgHero2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/tittle_onboarding_02"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_onboarding_02" />
+
+    <TextView
+        android:id="@+id/titleOnboard2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/tittle_onboarding_02"
+        android:textColor="@color/colorText1"
+        android:textSize="@dimen/font_18"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgHero2"
+        app:layout_constraintStart_toStartOf="@+id/imgHero2"
+        app:layout_constraintTop_toBottomOf="@+id/imgHero2" />
+
+    <TextView
+        android:id="@+id/descOnboard2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="@string/desc_onboard_2"
+        android:textColor="@color/colorText2"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintEnd_toEndOf="@+id/imgHero2"
+        app:layout_constraintStart_toStartOf="@+id/imgHero2"
+        app:layout_constraintTop_toBottomOf="@+id/titleOnboard2" />
+
+    <ImageView
+        android:id="@+id/imgHero3"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/tittle_onboarding_03"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_onboarding_3" />
+
+    <TextView
+        android:id="@+id/titleOnboard3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/tittle_onboarding_03"
+        android:textColor="@color/colorText1"
+        android:textSize="@dimen/font_18"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgHero3"
+        app:layout_constraintStart_toStartOf="@+id/imgHero3"
+        app:layout_constraintTop_toBottomOf="@+id/imgHero3" />
+
+    <TextView
+        android:id="@+id/descOnboard3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="@string/dummy_onboarding_03"
+        android:textColor="@color/colorText2"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintEnd_toEndOf="@+id/imgHero3"
+        app:layout_constraintStart_toStartOf="@+id/imgHero3"
+        app:layout_constraintTop_toBottomOf="@+id/titleOnboard3" />
+
+    <TextView
+        android:id="@+id/btnSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/skip"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnNext" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNext"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bg_button"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGetStarted"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/btn_background"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/star"
+        android:textColor="@color/colorPrimaryDark"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descOnboard3" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="133dp"
+            android:layout_height="131dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@string/star"
+            app:srcCompat="@drawable/ic_logo"
+            tools:layout_editor_absoluteY="-34dp" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

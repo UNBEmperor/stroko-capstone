@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout"
+    android:orientation="vertical"
+    tools:context=".ui.strokedetection.StrokeDetectionActivity">
+
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/flexboxLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_24"
+        android:layout_marginTop="@dimen/spacing_24"
+        android:layout_marginEnd="@dimen/spacing_24"
+        android:layout_marginBottom="@dimen/spacing_16"
+        app:alignItems="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_back"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textSize="13sp"
+            android:contentDescription="icon"
+            app:backgroundTint="@color/colorAccent"
+            app:cornerRadius="@dimen/spacing_10"
+            app:icon="@drawable/ic_back_arrow"
+            app:iconTint="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/stoke_assestment"
+            android:textColor="@color/colorText1"
+            android:textSize="@dimen/font_16"
+            android:textStyle="bold" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_32"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:layout_marginEnd="@dimen/spacing_32"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/assesment_dummy"
+                android:textColor="@color/colorText1"
+                android:textSize="@dimen/font_18"
+                android:textStyle="bold"
+                tools:alpha="100" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/assesment_dummy2" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_1"
+                android:layout_marginHorizontal="@dimen/spacing_36"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:layout_marginBottom="@dimen/spacing_12" />
+
+            <TextView
+                android:id="@+id/tvInfo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/info_1"
+                android:textSize="@dimen/font_14"
+                android:textStyle="bold"
+                tools:alpha="100" />
+
+            <TextView
+                android:id="@+id/tvNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/nama_inputan"
+                android:textSize="@dimen/font_12"
+                android:textStyle="bold"
+                tools:alpha="100" />
+
+            <EditText
+                android:id="@+id/edName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_32"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:autofillHints="Masukkan Usia Kamu"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/hint_nama"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:paddingHorizontal="@dimen/spacing_24"
+                android:paddingVertical="@dimen/spacing_16"
+                android:textSize="@dimen/font_12"
+                tools:alpha="100" />
+
+            <TextView
+                android:id="@+id/tvUsia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/usia"
+                android:textSize="@dimen/font_13"
+                android:textStyle="bold"
+                tools:alpha="100" />
+
+            <EditText
+                android:id="@+id/editUsia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_32"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:autofillHints="Masukkan Usia Kamu"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/hint_usia"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:paddingHorizontal="@dimen/spacing_24"
+                android:paddingVertical="@dimen/spacing_16"
+                android:textSize="@dimen/font_13"
+                tools:alpha="100" />
+
+            <TextView
+                android:id="@+id/tv_tinggi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/tinggi"
+                android:textSize="@dimen/font_13"
+                android:textStyle="bold"
+                tools:alpha="100" />
+
+            <EditText
+                android:id="@+id/edtinggi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_32"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:autofillHints="Masukkan Usia Kamu"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/tinggi_hint"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:paddingHorizontal="@dimen/spacing_24"
+                android:paddingVertical="@dimen/spacing_16"
+                android:textSize="@dimen/font_12"
+                tools:alpha="100" />
+
+            <TextView
+                android:id="@+id/tv_berat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/berat"
+                android:textSize="@dimen/font_13"
+                android:textStyle="bold"
+                tools:alpha="100" />
+
+            <EditText
+                android:id="@+id/edberat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_32"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:autofillHints="Masukkan Usia Kamu"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/berat_hint"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:paddingHorizontal="@dimen/spacing_24"
+                android:paddingVertical="@dimen/spacing_16"
+                android:textSize="@dimen/font_12"
+                tools:alpha="100" />
+
+            <TextView
+                android:id="@+id/tv_gander"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/gendre"
+                android:textSize="@dimen/font_13"
+                android:textStyle="bold"
+                tools:alpha="100" />
+
+            <AutoCompleteTextView
+                android:id="@+id/editGander"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_32"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:autofillHints="name"
+                android:background="@drawable/bg_edit_text"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_dropdown"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/gendre"
+                android:includeFontPadding="false"
+                android:inputType="none"
+                android:paddingHorizontal="@dimen/spacing_24"
+                android:paddingVertical="@dimen/spacing_16"
+                android:textSize="@dimen/font_12"
+                tools:alpha="100" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_1"
+                android:layout_marginHorizontal="@dimen/spacing_36"
+                android:layout_marginTop="@dimen/spacing_24"
+                android:layout_marginBottom="@dimen/spacing_12" />
+
+            <TextView
+                android:id="@+id/tvInfo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/info_2"
+                android:textSize="@dimen/font_14"
+                android:textStyle="bold"
+                tools:alpha="100" />
+
+            <TextView
+                android:id="@+id/tvHipertensi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:layout_marginEnd="32dp"
+                android:text="@string/hipertensi"
+                android:textSize="@dimen/font_14"
+                android:textStyle="bold"
+                tools:alpha="100" />
+
+            <AutoCompleteTextView
+                android:id="@+id/edHipertensi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_32"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:autofillHints="name"
+                android:background="@drawable/bg_edit_text"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_dropdown"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/hipertensi_hint"
+                android:includeFontPadding="false"
+                android:inputType="none"
+                android:paddingHorizontal="@dimen/spacing_24"
+                android:paddingVertical="@dimen/spacing_16"
+                android:textSize="@dimen/font_14"
+                tools:alpha="100" />
+
+            <TextView
+                android:id="@+id/tvJantung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:layout_marginEnd="32dp"
+                android:text="@string/jantung"
+                android:textSize="@dimen/font_14"
+                android:textStyle="bold"
+                tools:alpha="100" />
+
+            <AutoCompleteTextView
+                android:id="@+id/edpenyakitJantung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_32"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:autofillHints="name"
+                android:background="@drawable/bg_edit_text"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_dropdown"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/jantung_hint"
+                android:includeFontPadding="false"
+                android:inputType="none"
+                android:paddingHorizontal="@dimen/spacing_24"
+                android:paddingVertical="@dimen/spacing_16"
+                android:textSize="@dimen/font_12"
+                tools:alpha="100" />
+
+            <TextView
+                android:id="@+id/tvDiabetes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/diabetes"
+                android:textSize="@dimen/font_13"
+                android:textStyle="bold"
+                tools:alpha="100" />
+
+            <AutoCompleteTextView
+                android:id="@+id/edDiabetes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_32"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:autofillHints="name"
+                android:background="@drawable/bg_edit_text"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_dropdown"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/diabetes_hint"
+                android:includeFontPadding="false"
+                android:inputType="none"
+                android:paddingHorizontal="@dimen/spacing_24"
+                android:paddingVertical="@dimen/spacing_16"
+                android:textSize="@dimen/font_12"
+                tools:alpha="100" />
+
+            <TextView
+                android:id="@+id/tvRiwayatStrokePribadi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/riwayatStrokePribadi"
+                android:textSize="@dimen/font_13"
+                android:textStyle="bold"
+                tools:alpha="100" />
+
+            <AutoCompleteTextView
+                android:id="@+id/edRiwayatStrokePribadi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_32"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:autofillHints="name"
+                android:background="@drawable/bg_edit_text"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_dropdown"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/hint_RiwayatStrokePribadi"
+                android:includeFontPadding="false"
+                android:inputType="none"
+                android:paddingHorizontal="@dimen/spacing_24"
+                android:paddingVertical="@dimen/spacing_16"
+                android:textSize="@dimen/font_12"
+                tools:alpha="100" />
+
+            <TextView
+                android:id="@+id/tvRiwayatStrokeKeluarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/riwayatStrokeKeluarga"
+                android:textSize="@dimen/font_13"
+                android:textStyle="bold"
+                tools:alpha="100" />
+
+            <AutoCompleteTextView
+                android:id="@+id/edRiwayatStrokeKeluarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_32"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:autofillHints="name"
+                android:background="@drawable/bg_edit_text"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_dropdown"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/hint_RiwayatStrokeKeluarga"
+                android:includeFontPadding="false"
+                android:inputType="none"
+                android:paddingHorizontal="@dimen/spacing_24"
+                android:paddingVertical="@dimen/spacing_16"
+                android:textSize="@dimen/font_12"
+                tools:alpha="100" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_1"
+                android:layout_marginHorizontal="@dimen/spacing_36"
+                android:layout_marginTop="@dimen/spacing_24"
+                android:layout_marginBottom="@dimen/spacing_12" />
+
+            <TextView
+                android:id="@+id/tvInfo3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/info_3"
+                android:textSize="@dimen/font_14"
+                android:textStyle="bold"
+                tools:alpha="100" />
+
+            <TextView
+                android:id="@+id/tvMeroko"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/meroko"
+                android:textSize="@dimen/font_13"
+                android:textStyle="bold"
+                tools:alpha="100" />
+
+            <AutoCompleteTextView
+                android:id="@+id/edMerokok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_32"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:autofillHints="name"
+                android:background="@drawable/bg_edit_text"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_dropdown"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/poppins_semibold"
+                android:hint="@string/meroko"
+                android:includeFontPadding="false"
+                android:inputType="none"
+                android:paddingHorizontal="@dimen/spacing_24"
+                android:paddingVertical="@dimen/spacing_16"
+                android:textSize="@dimen/font_12"
+                tools:alpha="100" />
+
+            <TextView
+                android:id="@+id/tvAlkohol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/alkohol"
+                android:textSize="@dimen/font_13"
+                android:textStyle="bold"
+                tools:alpha="100" />
+
+            <AutoCompleteTextView
+                android:id="@+id/edAlkohol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_32"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:autofillHints="name"
+                android:background="@drawable/bg_edit_text"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_dropdown"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/poppins_semibold"
+                android:hint="@string/hint_alkohol"
+                android:includeFontPadding="false"
+                android:inputType="none"
+                android:paddingHorizontal="@dimen/spacing_24"
+                android:paddingVertical="@dimen/spacing_16"
+                android:textSize="@dimen/font_12"
+                tools:alpha="100" />
+
+            <TextView
+                android:id="@+id/tvAktivitasFisik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="@dimen/spacing_12"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/aktivitasFisik"
+                android:textSize="@dimen/font_13"
+                android:textStyle="bold"
+                tools:alpha="100" />
+
+            <AutoCompleteTextView
+                android:id="@+id/edAktivitasFisik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_32"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:layout_marginBottom="@dimen/spacing_10"
+                android:autofillHints="name"
+                android:background="@drawable/bg_edit_text"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_dropdown"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/poppins_semibold"
+                android:hint="@string/hint_AktivitasFisik"
+                android:includeFontPadding="false"
+                android:inputType="none"
+                android:paddingHorizontal="@dimen/spacing_24"
+                android:paddingVertical="@dimen/spacing_16"
+                android:textSize="@dimen/font_12"
+                tools:alpha="100" />
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-30dp"
+        app:cardCornerRadius="@dimen/spacing_30"
+        app:cardElevation="@dimen/spacing_32">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_34"
+            android:layout_marginTop="@dimen/spacing_27"
+            android:layout_marginBottom="@dimen/spacing_57"
+            android:background="@drawable/bg_button"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark" />
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

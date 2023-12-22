@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stroke-CH2-PS208</string>
+
+    <!-- OnBoarding -->
+    <string name="tittle_onboarding_01">Aplikasi Mentoring PascaStroke</string>
+    <string name="desc_onboard_1">Halo, Selamat Datang di Aplikasi Stroke Kami 😊</string>
+    <string name="tittle_onboarding_02">Petualangan Pemulihan</string>
+    <string name="desc_onboard_2">Mulai Harimu dengan Positif bersama StrokeAssist! 🚀</string>
+    <string name="tittle_onboarding_03">Aplikasi Pemulihan Stroke</string>
+    <string name="dummy_onboarding_03">Dengan StrokeAssist, kami merayakan setiap kemajuan kecil bersamamu! 🌟</string>
+    <string name="skip">Lewati</string>
+    <string name="next">Lanjut</string>
+    <string name="star">Mulai</string>
+
+    <!-- Login -->
+    <string name="login_title">Halo, mari masuk</string>
+    <string name="ed_email_error_message">Format alamat email tidak valid</string>
+    <string name="password_error_massage">Kata sandi tidak boleh kurang dari 8 karakter</string>
+    <string name="login_message">Selamat datang kembali! Silakan masukkan username dan password Anda di bawah ini untuk mengakses aplikasi.✍️</string>
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="login">Masuk</string>
+    <string name="dont_have_account">belum memiliki akun ?</string>
+    <string name="register">Daftar</string>
+    <string name="hint_email">Silakan Masukkan Email Anda</string>
+    <string name="hint_password">Silakan Masukkan Kata Sandi Anda</string>
+
+    <!--Register-->
+    <string name="register_title">Buat Akun</string>
+    <string name="register_message">Pertama kali menggunakan aplikasi ini? Ini adalah hari yang indah untuk memulai dengan akun baru Anda ✨</string>
+    <string name="already_have_an_account">Sudah memiliki akun?</string>
+    <string name="name">Nama</string>
+
+    <!--About layout-->
+    <string name="about">Tentang Kami</string>
+    <string name="about_name">Stroko | CH2-PS208</string>
+    <string name="version_1_0">versi 1.0</string>
+    <string name="copyright_2023_stroke">Hak Cipta 2023 Stroko</string>
+
+    <!--artikel layout-->
+    <string name="article_tittle">Artikel</string>
+    <string name="search_hint">Telusuri Article . . .</string>
+    <string name="name_article">Nama Article</string>
+    <string name="article_detail">Detail Artikel</string>
+    <string name="Description_article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="dummy_date">Februari 24, 2024</string>
+    <string name="dummy_time">5 menit yang lalu</string>
+    <string name="description">Deskrpsi</string>
+    <string name="tittle_article">febriyadi</string>
+    <string name="article_seeAll">Artikel Lainnya </string>
+    //detail artikel
+
+
+    //Navigation
+    <string name="home">Beranda</string>
+    <string name="favorite">Favorite</string>
+    <string name="notification">Notifikasi</string>
+    <string name="profile">Profil</string>
+    <string name="loading">Loading . . .</string>
+
+    //home
+    <string name="hello_home">Halo Febriyadi</string>
+    <string name="welcome">Selamat Datang Di Aplikasi,</string>
+    <string name="stoke_detection">Stroke Deteksi</string>
+    <string name="food_recommendation">Rekomendasi Makanan</string>
+    <string name="health_education">Stroke Artikel</string>
+    <string name="healthy_lifestyle">Pola Hidup Sehat</string>
+    <string name="community">Komunitas Stroke</string>
+    <string name="ambulance">Ambulans</string>
+    <string name="promo">Promo Untuk Anda</string>
+    <string name="home_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+
+    //item promo
+    <string name="dummy_promo">50% OFF untuk pelanggan setia</string>
+    <string name="get_now">Beli Sekarang!</string>
+    <string name="name_artikel">Name Artikel</string>
+    <string name="see_all">Lihat Selanjutnya</string>
+
+    //detail detection
+    <string name="header_detal_detection">Detail Stroke Deteksi</string>
+    <string name="output_detection_hight">Tinggi</string>
+    <string name="output_detection_low">Rendah</string>
+    <string name="go_home">Beranda</string>
+    <string name="go_food">Rekomendasi Makanan</string>
+
+    //profile
+    <string name="dummy_user">Febriyadi</string>
+    <string name="dummy_email">Stroko@gmail.com</string>
+    <string name="account">Akun</string>
+    <string name="edit_profile">Edit Profil</string>
+    <string name="logout">Kelur</string>
+    <string name="security">Keamanan</string>
+    <string name="others">Lainnya</string>
+    <string name="about_us">Tentang Kami</string>
+    <string name="change_password">Ganti Kata Sandi</string>
+    <string name="change_languages">Ganti Bahasa</string>
+
+    //empety
+    <string name="name_empty">Nama tidak boleh kosong</string>
+    <string name="name_tree">Panjang minimal nama 3 karakter</string>
+    <string name="all_empty">Harap isi semua kolom yang tersedia</string>
+    <string name="created">Dibuat</string>
+
+    //required
+    <string name="email_required">Email diperlukan</string>
+    <string name="name_required">Nama diperlukan</string>
+    <string name="password_required">Password is required</string>
+    <string name="login_error_message">Terjadi kesalahan saat login.</string>
+
+    //stroke detection
+    <string name="assesment_dummy">Selamat datang di Fitur Deteksi Stroke</string>
+    <string name="assesment_dummy2">Bagi yang pertama kali menggunakan aplikasi ini, mari memulai hari indah Anda dengan memanfaatkan fitur deteksi stroke kami ✨</string>
+    <string name="usia">Usia</string>
+    <string name="nama_inputan">Nama</string>
+    <string name="info_1">Informasi Data Diri</string>
+    <string name="info_2">Informasi Riwayat Penyakit</string>
+    <string name="info_3">Informasi Pola Hidup</string>
+    <string name="ttl">Tanggal Lahir</string>
+    <string name="gendre">Jenis Kelamin</string>
+    <string name="hipertensi">Hipertensi</string>
+    <string name="hipertensi_hint">Apakah Memiliki Riwayat Hipertensi ?</string>
+    <string name="diabetes">Diabetes</string>
+    <string name="diabetes_hint">Apakah Memiliki Riwayat Diabetes ?</string>
+    <string name="riwayatStrokePribadi">Riwayat Stroke Pribadi</string>
+    <string name="hint_RiwayatStrokePribadi">Apakah memiliki Riwayat Stroke Pribadi ?</string>
+    <string name="riwayatStrokeKeluarga">Riwayat Stroke Keluarga</string>
+    <string name="hint_RiwayatStrokeKeluarga">Apakah memiliki Riwayat Stroke Keluarga ?</string>
+    <string name="jantung">Jantung</string>
+    <string name="jantung_hint">Apakah Memiliki Riwayat Penyakit Jantung ?</string>
+    <string name="meroko">Merokok</string>
+    <string name="alkohol">Alkohol</string>
+    <string name="hint_alkohol">Apakah pernah meminum Alkohol</string>
+    <string name="aktivitasFisik">Aktivitas Fisik</string>
+    <string name="hint_AktivitasFisik">Aktivitas fisik sering kamu lakuin ?</string>
+    <string name="meroko_hint">Apakah Pernah Merokok ?</string>
+    <string name="hint_usia">Masukkan Usia Anda. . .</string>
+    <string name="hint_nama">Masukkan Nama Anda. . .</string>
+    <string name="tinggi">Tinggi Badan</string>
+    <string name="tinggi_hint">Masukan Tinggi Badan anda (cm) ?</string>
+    <string name="berat">Berat Badan</string>
+    <string name="submit">Kirim</string>
+    <string name="stoke_assestment">Stroke Deteksi</string>
+    <string name="berat_hint">Masukan Berat Badan Anda (kg) ?</string>
+    //notification
+    <string name="tittle_notification">Notifikasi</string>
+    <string name="today">Hari Ini</string>
+    <string name="yesterday">Kemarin</string>
+    <string name="dummy_notif_title">Pembelian Berhasil!</string>
+    <string name="dummy_notif_detail">Pemesanan fitur Rekomendasi berhasil!</string>
+    //ambulance
+    <string name="hospital">Cari Rumah Sakit terdekatmu</string>
+
+    //coming soon
+    <string name="comingSoon">Segera Hadir</string>
+
+    //change password
+    <string name="changePasswordTittle">Cukup sediakan email Anda, dan kami akan segera mengirimkan kata sandi baru kepada Anda.</string>
+    <string name="create_new_password">Buat Kata Sandi Baru</string>
+    <string name="password_change">Ganti Kata Sandi</string>
+
+    //favorite
+    <string name="noFavorite">Tidak ada artikel favorit saat ini.</string>
+
+    <string name="noData">Tidak ada artikel </string>
+
+    //detaildetection
+    <string name="outputDescriptionLow">Deteksi menunjukkan risiko rendah terhadap penyakit stroke. Meskipun demikian, kami mendorong Anda untuk tetap menjaga gaya hidup sehat dengan rajin berolahraga dan menjaga pola makan yang seimbang. Konsistensi dalam pemeriksaan kesehatan rutin sangat disarankan. Selain itu, Anda dapat menggunakan fitur rekomendasi makanan untuk mendukung kesehatan jantung Anda.</string>
+    <string name="outputDescriptionHight">Hasil deteksi menunjukkan kemungkinan risiko tinggi terhadap penyakit stroke. Kami sangat menyarankan Anda untuk segera berkonsultasi dengan profesional medis guna evaluasi lebih lanjut. Kami juga merekomendasikan pemantauan kesehatan secara rutin untuk pemahaman yang lebih baik terhadap kondisi Anda.</string>
+
+    //premium
+    <string name="button_premium">$0.99/month</string>
+    <string name="text_premium2">$1.99/month* save 50%</string>
+    <string name="text_premium1">Jadilah Sehat dengan </string>
+    <string name="text_premium">STROKO</string>
+    <string name="text_premium3">Temukan makanan yang baik untuk tubuhmu, jadilah sehat bersama bersama STROKO</string>
+    <string name="benefit1">Akses deteksi dini tanpa batas! Pilih pencegahan penyakit stroke dengan lebih efektif sebagai pengguna premium.</string>
+    <string name="benefit2">Akses fitur rekomendasi makanan secara eksklusif sebagai pengguna premium.</string>
+    <string name="benefit3">Temukan makanan yang disesuaikan dengan preferensi Anda.</string>
+
+    //foodrecomendation
+    <string name="weight">Tinggi Bera</string>
+    <string name="height">Tinggi Badan</string>
+    <string name="hint_weight">Masukkan tinggi badan dalam bentuk (cm)</string>
+    <string name="hint_height">Masukkan berat badan dalam bentuk (kg)</string>
+    <string name="food_recomendation">Rekomendasi Makanan</string>
+    <string name="food_recomendation2">Hallo hehe</string>
+
+    //detailfood
+    <string name="name_food">Salad</string>
+    <string name="detail_food">Rincian Makanan</string>
+    <string name="information">Ketrangan</string>
+    <string name="information2">Nasi adalah makanan pokok yang umum dikonsumsi di banyak negara, terutama di Asia. Nasi adalah biji-bijian padi yang dimasak hingga menjadi butiran yang lembut dan memiliki tekstur kenyal. Nasi sering menjadi pendamping hidangan utama seperti daging, ikan, sayuran, atau hidangan berkuah.</string>
+    <string name="ingredients">Kandungan</string>
+    <string name="ingredients1">Lemak</string>
+    <string name="ingredients2">Kabohidrat</string>
+    <string name="ingredients3">Serat</string>
+    <string name="ingredients4">Natrium</string>
+    <string name="ingredients5">Kalium</string>
+    <string name="fat">0.3</string>
+    <string name="carbo">0.39</string>
+    <string name="fiber">0.2</string>
+    <string name="sodium">0.01</string>
+    <string name="kalium">0.4</string>
+</resources>
+

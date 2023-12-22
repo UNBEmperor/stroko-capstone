@@ -1,0 +1,205 @@
+<resources>
+    <string name="app_name">Stroke-CH2-PS208</string>
+
+    <!-- OnBoarding -->
+    <string name="tittle_onboarding_01">Post-Stroke Mentoring App</string>
+    <string name="desc_onboard_1">Hello, Welcome to Our Stroke App 😊</string>
+    <string name="tittle_onboarding_02">Recovery Adventure</string>
+    <string name="desc_onboard_2">Start Your Day Positively with StrokeAssist! 🚀</string>
+    <string name="tittle_onboarding_03">Stroke Recovery App</string>
+    <string name="dummy_onboarding_03">With StrokeAssist, we celebrate every small progress with you! 🌟</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="star">Start</string>
+
+    <!-- Login -->
+    <string name="login_title">Hello, let s sign in</string>
+    <string name="ed_email_error_message">Invalid email address format</string>
+    <string name="password_error_massage">Password cannot be less than 8 characters</string>
+    <string name="login_message">Welcome back! Please enter your username and password below to access the application✍️.</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="dont_have_account">Dont have account ?</string>
+    <string name="register">Register</string>
+    <string name="hint_email">Please Enter Your Email</string>
+    <string name="hint_password">Please Enter Your Password</string>
+
+    <!--Register-->
+    <string name="register_title">Create an account</string>
+    <string name="register_message">First time using this app ? It s a beautiful day get you started with your new account ✨</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="name">Name</string>
+
+    <!--About Layout-->
+    <string name="about">About</string>
+    <string name="version_1_0">version 1.0</string>
+    <string name="about_name">Stroke | CH2-PS208</string>
+    <string name="copyright_2023_stroke">Copyright 2023 Stroke</string>
+
+
+    <!--article-->
+    <string name="article_tittle">Article</string>
+    <string name="article_seeAll">More Articles </string>
+    <string name="article_detail">Details Article</string>
+    <string name="search_hint">Search Article . . .</string>
+    <string name="name_article">Name Article</string>
+    <string name="tittle_article">Unravel mysteries of the Maldives</string>
+    <string name="dummy_date">February 24, 2024</string>
+    <string name="dummy_time">5 minutes ago</string>
+    <string name="description">Description</string>
+    <string name="Description_article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+
+    //Navigation
+    <string name="home">Home</string>
+    <string name="favorite">Favorite</string>
+    <string name="notification">Notification</string>
+    <string name="profile">Profile</string>
+
+    //HomeFragment
+    <string name="hello_home">Hello Febriyadi</string>
+    <string name="welcome">Welcome Back,</string>
+    <string name="promo">Promo For You</string>
+    <string name="home_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
+    <string name="stoke_detection">Stroke detection</string>
+    <string name="food_recommendation">Food\nRecommendation</string>
+    <string name="health_education">Stroke Article</string>
+    <string name="healthy_lifestyle">Healthy Lifestyle</string>
+    <string name="community">Community Stroke</string>
+    <string name="ambulance">Ambulance</string>
+
+
+    //ambulance
+    <string name="hospital">Find your nearest hospital</string>
+
+    //item promo
+    <string name="dummy_promo">50% OFF for loyal customers</string>
+    <string name="get_now">Get Now!</string>
+    <string name="name_artikel">Name Article</string>
+    <string name="see_all">See all</string>
+
+    //detail detection
+    <string name="header_detal_detection">Details Stroke Detection</string>
+    <string name="output_detection_hight">Hight</string>
+    <string name="output_detection_low">Low</string>
+    <string name="go_home">Home</string>
+    <string name="go_food">Food Recommendation</string>
+
+    //profile
+    <string name="dummy_user">Mr.Febriyadi</string>
+    <string name="dummy_email">stroko@gmail.com</string>
+    <string name="account">Account</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="logout">Log Out</string>
+    <string name="security">Security</string>
+    <string name="others">Others</string>
+    <string name="about_us">About Us</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_languages">Change Language</string>
+
+    //empty
+    <string name="name_empty">Name not allowed empty</string>
+    <string name="name_tree">Name min length 3 character</string>
+    <string name="all_empty">Please fill in all the fields</string>
+    <string name="created">Created</string>
+
+
+    //required
+    <string name="email_required">Email is required</string>
+    <string name="name_required">Name is required</string>
+    <string name="password_required">Password is required</string>
+    <string name="login_error_message">An error occurred during login.</string>
+
+    //stroke detection
+    <string name="assesment_dummy">Welcome to Stroke Detection</string>
+    <string name="assesment_dummy2">For first-time users, seize the day and get started with your new account using our stroke detection feature ✨</string>
+    <string name="usia">Age</string>
+    <string name="nama_inputan">Name</string>
+    <string name="info_1">Personal Information</string>
+    <string name="info_2">Medical History</string>
+    <string name="info_3">Lifestyle Information</string>
+    <string name="ttl">Date of Birth</string>
+    <string name="gendre">Gender</string>
+    <string name="hipertensi">Hypertension</string>
+    <string name="hipertensi_hint">Do you have a history of hypertension?</string>
+    <string name="diabetes">Diabetes</string>
+    <string name="diabetes_hint">Do you have a history of diabetes?</string>
+    <string name="riwayatStrokePribadi">Personal Stroke History</string>
+    <string name="hint_RiwayatStrokePribadi">Do you have a personal history of stroke?</string>
+    <string name="riwayatStrokeKeluarga">Family Stroke History</string>
+    <string name="hint_RiwayatStrokeKeluarga">Do you have a family history of stroke?</string>
+    <string name="jantung">Heart</string>
+    <string name="jantung_hint">Do you have a history of heart disease?</string>
+    <string name="meroko">Smoking</string>
+    <string name="alkohol">Alcohol</string>
+    <string name="hint_alkohol">Have you ever consumed alcohol?</string>
+    <string name="aktivitasFisik">Physical Activity</string>
+    <string name="hint_AktivitasFisik">How often do you engage in physical activity?</string>
+    <string name="meroko_hint">Have you ever smoked?</string>
+    <string name="hint_usia">Enter Your Age...</string>
+    <string name="hint_nama">Enter Your Name...</string>
+    <string name="tinggi">Height</string>
+    <string name="tinggi_hint">Enter your height in centimeters.</string>
+    <string name="berat">Weight</string>
+    <string name="submit">Submit</string>
+    <string name="stoke_assestment">Stroke Detection</string>
+    <string name="berat_hint">Enter your weight in (kg) ?</string>
+    //comingSoon
+    <string name="comingSoon">Coming Soon</string>
+
+    //notification
+    <string name="tittle_notification">Notification</string>
+    <string name="today">Today</string>
+    <string name="loading">Loading . . .</string>
+    <string name="yesterday">yesterday</string>
+    <string name="dummy_notif_title">Purchase Successful!</string>
+    <string name="dummy_notif_detail">Recommendation feature booking successful! </string>
+
+    //change password
+    <string name="changePasswordTittle">Simply provide your email, and we ll promptly send you a new password.</string>
+    <string name="create_new_password">Create New Password</string>
+    <string name="password_change">Change Password</string>
+    //favorite
+    <string name="noFavorite">There are no favorite articles at the moment.</string>
+
+    <string name="noData">No Articles.</string>
+
+    //deteksidetail
+    <string name="outputDescriptionLow">Detection indicates a low risk of stroke. Nonetheless, we encourage you to maintain a healthy lifestyle by exercising diligently and maintaining a balanced diet. Consistency in regular health check-ups is highly recommended. In addition, you can use the food recommendation feature to support your heart health.</string>
+    <string name="outputDescriptionHight">The detection results indicate a possible high risk of stroke. We strongly advise you to consult a medical professional immediately for further evaluation. We also recommend regular health monitoring for a better understanding of your condition.</string>
+
+    //premium
+    <string name="button_premium">$0.99/month</string>
+    <string name="text_premium2">$1.99/month* save 50%</string>
+    <string name="text_premium1">Be Health with</string>
+    <string name="text_premium">STROKO</string>
+    <string name="text_premium3">Find food that is good for your body, be healthy together with STROKO</string>
+    <string name="benefit1">Unlimited early detection access! Choose more effective stroke prevention as a premium user.</string>
+    <string name="benefit2">Access the food recommendation feature exclusively as a premium user.</string>
+    <string name="benefit3">Find foods tailored to your preferences.</string>
+
+    //foodrecomendation
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="hint_weight">Enter your Weight...</string>
+    <string name="hint_height">Enter your Height...</string>
+    <string name="food_recomendation">Food Recomendation</string>
+    <string name="food_recomendation2">Hallo hehe</string>
+
+    //detailfood
+    <string name="name_food">Salad</string>
+    <string name="detail_food">Detail Food</string>
+    <string name="information">Information</string>
+    <string name="information2">Rice is a staple food commonly consumed in many countries, especially in Asia. Rice is rice grains that are cooked until they become soft grains and have a chewy texture. Rice is often an accompaniment to main dishes such as meat, fish, vegetables or soupy dishes.</string>
+    <string name="ingredients">ingredients</string>
+    <string name="ingredients1">Fat</string>
+    <string name="ingredients2">Carbo</string>
+    <string name="ingredients3">Fiber</string>
+    <string name="ingredients4">Sodium</string>
+    <string name="ingredients5">Kalium</string>
+    <string name="fat">0.3</string>
+    <string name="carbo">0.39</string>
+    <string name="fiber">0.2</string>
+    <string name="sodium">0.01</string>
+    <string name="kalium">0.4</string>
+</resources>

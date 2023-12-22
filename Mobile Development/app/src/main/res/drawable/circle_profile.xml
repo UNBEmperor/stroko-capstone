@@ -1,0 +1,31 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background shape -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/colorbackgroud4" />
+        </shape>
+    </item>
+
+    <!-- Oval shape with transparent stroke (inner) -->
+    <item
+        android:bottom="3dp"
+        android:left="3dp"
+        android:right="3dp"
+        android:top="3dp">
+        <shape android:shape="oval">
+            <stroke
+                android:width="3dp"
+                android:color="@android:color/transparent" />
+        </shape>
+    </item>
+
+    <!-- Oval shape with colored stroke (outer) -->
+    <item>
+        <shape android:shape="oval">
+            <stroke
+                android:width="3dp"
+                android:color="@color/colorPrimaryDark" />
+        </shape>
+    </item>
+</layer-list>

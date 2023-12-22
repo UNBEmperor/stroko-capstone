@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Warna Utama -->
+    <color name="colorPrimary">#449DD6</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#6DC8CD</color>
+
+    <!-- Warna Tombol -->
+    <color name="colorButtonNormal">#6DC8CD</color>
+    <color name="colorButtonPressed">#EDB18E</color>
+
+    <!-- Warna Text -->
+    <color name="colorText1">#181818</color>
+    <color name="colorText2">#989898</color>
+    <color name="bg_search">#F9F9F9</color>
+
+    <!-- Warna Background -->
+    <color name="colorbackgroud1">#FFFFFF</color>
+    <color name="colorbackgroud2">#6B9FD1</color>
+    <color name="colorbackgroud3">#449DD6</color>
+    <color name="colorbackgroud4">#D9D9D9</color>
+
+    <!--Proggresbar-->
+    <color name="transparent_blue">#4D2D3E50</color>
+</resources>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/tvHome"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_218"
+            android:background="@drawable/bg_view_home"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/spacing_54"
+            android:layout_height="@dimen/spacing_54"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="@dimen/spacing_24"
+            android:background="@drawable/circle_profile"
+            android:src="@drawable/ic_stroke_detection"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_12"
+            android:layout_marginTop="@dimen/spacing_24"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/welcome"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_12"
+            app:layout_constraintStart_toEndOf="@+id/iv_avatar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvHello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_12"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/about_name"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_18"
+            app:layout_constraintStart_toEndOf="@+id/iv_avatar"
+            app:layout_constraintTop_toTopOf="@+id/tvWelcome" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_32"
+            android:layout_marginTop="@dimen/spacing_32"
+            android:layout_marginEnd="@dimen/spacing_32"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:justificationMode="inter_word"
+            android:text="Makasih Orang Baik . . ."
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/spacing_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHello" />
+
+        <include
+            android:id="@+id/vSearch"
+            layout="@layout/view_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_32"
+            android:layout_marginTop="@dimen/spacing_192"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvHome" />
+
+        <include
+            android:id="@+id/vMenu"
+            layout="@layout/view_menu_home" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_18"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/promo"
+            android:textSize="@dimen/font_16"
+            app:layout_constraintStart_toStartOf="@id/vMenu"
+            app:layout_constraintTop_toBottomOf="@id/vMenu" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPromo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/vMenu"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/vMenu"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            tools:itemCount="1"
+            tools:listitem="@layout/item_promo" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_18"
+            app:layout_constraintEnd_toEndOf="@id/vMenu"
+            app:layout_constraintStart_toStartOf="@id/vMenu"
+            app:layout_constraintTop_toBottomOf="@+id/rvPromo">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/article_tittle"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/seeAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/see_all"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvArticle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/linearLayout2"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            tools:itemCount="1"
+            tools:listitem="@layout/item_grid_artikel" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

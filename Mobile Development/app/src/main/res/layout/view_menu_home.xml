@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/spacing_32"
+    android:layout_marginTop="@dimen/spacing_28"
+    android:columnCount="3"
+    android:rowCount="2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/vSearch">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="125dp"
+        android:layout_columnWeight="1"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/strokeDecetionFitur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_8">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginBottom="@dimen/spacing_7"
+                android:contentDescription="image 1"
+                android:src="@drawable/ic_stroke_detection" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/stoke_detection"
+                android:textAlignment="center"
+                android:textSize="@dimen/font_8" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Item 2 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/foodRekomendasiFitur"
+        android:layout_width="0dp"
+        android:layout_height="125dp"
+        android:layout_columnWeight="1"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/foodRecomendationFitur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_8">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_60"
+                android:layout_marginBottom="@dimen/spacing_7"
+                android:contentDescription="food rekomedasi"
+                android:src="@drawable/ic_foodrecomendation" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/food_recommendation"
+                android:textAlignment="center"
+                android:textSize="@dimen/font_8" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Item 3 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="125dp"
+        android:layout_columnWeight="1"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/articleFitur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:padding="@dimen/font_8">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_60"
+                android:layout_marginBottom="@dimen/spacing_7"
+                android:contentDescription="artikel"
+                android:src="@drawable/ic_article" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/health_education"
+                android:textAlignment="center"
+                android:textSize="@dimen/font_8" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Item 4 -->
+    <!-- Add three more LinearLayouts for additional items (Item 4, 5, and 6) using the same structure -->
+
+    <!-- Item 4 -->
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="0dp"
+        android:layout_height="125dp"
+        android:layout_columnWeight="1"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/healthyLifestyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_8">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_60"
+                android:layout_marginBottom="@dimen/spacing_7"
+                android:contentDescription="@string/healthy_lifestyle"
+                android:src="@drawable/ic_healtylive" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/healthy_lifestyle"
+                android:textAlignment="center"
+                android:textSize="@dimen/font_8" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Item 5 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/spacing_125"
+        android:layout_columnWeight="1"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/communityStroke"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_8">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_60"
+                android:layout_marginBottom="@dimen/spacing_7"
+                android:contentDescription="@string/community"
+                android:src="@drawable/comunition_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/community"
+                android:textAlignment="center"
+                android:textSize="@dimen/font_8" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/spacing_125"
+        android:layout_columnWeight="1"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/ambulance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_8">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_60"
+                android:layout_marginBottom="@dimen/spacing_7"
+                android:contentDescription="@string/ambulance"
+                android:src="@drawable/ic_ambulance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/ambulance"
+                android:textAlignment="center"
+                android:textSize="@dimen/font_8" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</GridLayout>
