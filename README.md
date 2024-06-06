@@ -16,7 +16,7 @@ SCREENSHOOT APPSNYA
 
 ## **Cloud Architecture**
 
-![App Screenshot](https://bte-jkt.telkomuniversity.ac.id/wp-content/uploads/2023/03/image-2.png)
+![App Screenshot](https://drive.google.com/file/d/1Tiba2vw6EZ17YWcQKRVN3GZe7MiKuENT/view?usp=sharing)
 
 ## **API Reference**
 ### **SignUp**
