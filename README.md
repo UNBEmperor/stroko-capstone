@@ -16,7 +16,7 @@ SCREENSHOOT APPSNYA
 
 ## **Cloud Architecture**
 
-![App Screenshot](https://drive.google.com/file/d/1Tiba2vw6EZ17YWcQKRVN3GZe7MiKuENT/view?usp=sharing)
+![App Screenshot](https://github.com/UNBEmperor/stroko-capstone/blob/main/Cloud%20Computing/Cloud%20Architecture.png)
 
 ## **API Reference**
 ### **SignUp**
