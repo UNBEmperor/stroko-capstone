@@ -1,4 +1,4 @@
-![Cloud Architecture](https://github.com/UNBEmperor/stroko-capstone/assets/97173485/ce762e8a-e7ca-40f3-ae32-ce224fb6a5dd)# **CH2-PS208 STROKO APP**
+# **CH2-PS208 STROKO APP**
 
 <div style="text-align:center;"><img src="https://drive.google.com/uc?id=1EChzBCWfsz1ymbe4NXKmgdfiCehnFcC-" alt="STROKO Logo" style="width:200px;height:200px;"></div>
 
@@ -15,7 +15,7 @@ According to the World Health Organization (WHO) in 2019, stroke is the leading 
 SCREENSHOOT APPSNYA
 
 ## **Cloud Architecture**
-![Nama Gambar](https://github.com/UNBEmperor/stroko-capstone/blob/main/Cloud%20Computing/Cloud%20Architecture.png)
+![Nama Gambar](https://github.com/UNBEmperor/stroko-capstone/assets/97173485/ce762e8a-e7ca-40f3-ae32-ce224fb6a5dd)
 
 ## **API Reference**
 ### **SignUp**
