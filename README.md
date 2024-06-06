@@ -13,7 +13,7 @@ According to the World Health Organization (WHO) in 2019, stroke is the leading 
 # **DOCUMENTATION**
 ## **STROKO**
 ### Figma : https://www.figma.com/design/ZbBW2OWsR0YnxEmdcuRFAb/CAPSTONE?node-id=0-1
-<img src="https://github.com/UNBEmperor/stroko-capstone/assets/97173485/c46cafe1-224e-4b91-899a-e45cf76c3ce3" width="100">
+<img src="https://github.com/UNBEmperor/stroko-capstone/assets/97173485/c46cafe1-224e-4b91-899a-e45cf76c3ce3" width="200">
 
 
 
