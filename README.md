@@ -11,8 +11,8 @@ According to the World Health Organization (WHO) in 2019, stroke is the leading 
 - Articles
 
 # **DOCUMENTATION**
-## **Screenshoot App**
-SCREENSHOOT APPSNYA
+## **STROKO**
+## Figma : https://www.figma.com/design/ZbBW2OWsR0YnxEmdcuRFAb/CAPSTONE?node-id=0-1
 
 ## **Cloud Architecture**
 ![Nama Gambar](https://github.com/UNBEmperor/stroko-capstone/assets/97173485/ce762e8a-e7ca-40f3-ae32-ce224fb6a5dd)
