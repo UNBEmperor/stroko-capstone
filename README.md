@@ -15,8 +15,9 @@ According to the World Health Organization (WHO) in 2019, stroke is the leading 
 SCREENSHOOT APPSNYA
 
 ## **Cloud Architecture**
-
-![App Screenshot](https://github.com/UNBEmperor/stroko-capstone/blob/main/Cloud%20Computing/Cloud%20Architecture.png)
+<div style="background-color: white; padding: 10px; display: inline-block;">
+  <img src="https://github.com/UNBEmperor/stroko-capstone/blob/main/Cloud%20Computing/Cloud%20Architecture.png" alt="">
+</div>
 
 ## **API Reference**
 ### **SignUp**
