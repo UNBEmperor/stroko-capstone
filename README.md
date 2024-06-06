@@ -15,7 +15,8 @@ According to the World Health Organization (WHO) in 2019, stroke is the leading 
 SCREENSHOOT APPSNYA
 
 ## **Cloud Architecture**
-![App Screenshot](https://drive.google.com/file/d/1RgekXzbacRCXjiqnRzU54Fpk_fbAxem-/view?usp=sharing)
+
+![App Screenshot](https://bte-jkt.telkomuniversity.ac.id/wp-content/uploads/2023/03/image-2.png)
 
 ## **API Reference**
 ### **SignUp**
