@@ -13,7 +13,7 @@ According to the World Health Organization (WHO) in 2019, stroke is the leading 
 # **DOCUMENTATION**
 ## **STROKO**
 ### Figma : https://www.figma.com/design/ZbBW2OWsR0YnxEmdcuRFAb/CAPSTONE?node-id=0-1
-<img src="https://github.com/UNBEmperor/stroko-capstone/assets/97173485/c46cafe1-224e-4b91-899a-e45cf76c3ce3" width="250">  <img src="https://github.com/UNBEmperor/stroko-capstone/assets/97173485/0568ea28-2a0a-449d-a4af-12ef1d0ac7d7" width="250">  <img src="https://github.com/UNBEmperor/stroko-capstone/assets/97173485/cfddfb57-e5de-4346-8350-459b7d0481d7" width="250">  <img src="https://github.com/UNBEmperor/stroko-capstone/assets/97173485/84ab7f64-e44d-4ed5-8b0d-92400333a664" width="250">
+<img src="https://github.com/UNBEmperor/stroko-capstone/assets/97173485/c46cafe1-224e-4b91-899a-e45cf76c3ce3" width="250"> <img src="https://github.com/UNBEmperor/stroko-capstone/assets/97173485/0568ea28-2a0a-449d-a4af-12ef1d0ac7d7" width="250"> <img src="https://github.com/UNBEmperor/stroko-capstone/assets/97173485/cfddfb57-e5de-4346-8350-459b7d0481d7" width="250"> <img src="https://github.com/UNBEmperor/stroko-capstone/assets/97173485/84ab7f64-e44d-4ed5-8b0d-92400333a664" width="250">
 
 ## **Cloud Architecture**
 ![Nama Gambar](https://github.com/UNBEmperor/stroko-capstone/assets/97173485/ce762e8a-e7ca-40f3-ae32-ce224fb6a5dd)
