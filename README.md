@@ -1,7 +1,7 @@
 # **CH2-PS208 STROKO APP**
 
 <div style="text-align:center;"><img src="https://drive.google.com/uc?id=1EChzBCWfsz1ymbe4NXKmgdfiCehnFcC-" alt="STROKO Logo" style="width:200px;height:200px;"></div>
-
+## Link Aplikasi : <a href''>STROKO</a>
 ## **Background**
 According to the World Health Organization (WHO) in 2019, stroke is the leading cause of death in Indonesia. In an effort to reduce the impact of stroke and increase awareness of prevention and management, we present the STROKO application.
 
